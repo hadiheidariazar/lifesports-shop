@@ -1,0 +1,85 @@
+@mixin responsivePage($size) {
+    @if ($size ==XL) {
+        @media screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if ($size ==L) {
+        @media screen and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if ($size ==M) {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if ($size ==S) {
+        @media screen and (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if ($size ==XS) {
+        @media screen and (max-width: 400px) {
+            @content
+        }
+    }
+}
+
+;
+
+@mixin sliderStyle {
+    .special-institutions-swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide .card {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@mixin cardProductStyle {
+    .product-title {
+        height: 4rem;
+        overflow-y: hidden;
+
+        .card-title {
+            font-size: .9rem;
+            line-height: .9rem;
+            display: block;
+
+            &:hover {
+                color: $theme-color;
+            }
+
+            @include responsivePage(M) {
+                font-size: .8rem;
+                line-height: .8rem;
+            }
+        }
+    }
+
+    .product-discount {
+        height: 1.5rem;
+
+        .discount {
+            font-size: .9rem;
+            line-height: 12px;
+        }
+    }
+
+    .product-price {
+        height: 1.8rem;
+
+        .price {
+            font-size: 1rem;
+            line-height: 13px;
+        }
+    }
+}

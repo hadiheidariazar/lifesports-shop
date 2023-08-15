@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="./styles/css/order.css">
+    <link rel="icon" href="./images/icons/icon-tab.png">
+
+    <!-- Primary Meta Tags -->
+    <title> ثبت سفارش - لایف اسپرت </title>
+    <meta name="title" content="فروشگاه اینترنتی لایف اسپرت">
+    <meta name="description"
+        content="سایت لایف اسپرت برای خریداری راحت و امن لوازم وررزشی در هر رشته هست که میتوانید از این سایت استفاده کنید">
+    <meta name="keywords" content="لایف اسپرت, خرید لوازم ورزشی, ورزشی, خدمات ورزشی, lifesports"">
+
+    <!-- Open Graph / Facebook -->
+    <meta property=" og:type" content="website">
+    <meta property="og:url" content="https://hadiheidariazar.github.io/lifesports/">
+    <meta property="og:title" content="فروشگاه اینترنتی لایف اسپرت">
+    <meta property="og:description"
+        content="سایت لایف اسپرت برای خریداری راحت و امن لوازم وررزشی در هر رشته هست که میتوانید از این سایت استفاده کنید">
+    <meta property="og:image" content="./images/icons/lifesports.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hadiheidariazar.github.io/lifesports/">
+    <meta property="twitter:title" content="فروشگاه اینترنتی لایف اسپرت">
+    <meta property="twitter:description"
+        content="سایت لایف اسپرت برای خریداری راحت و امن لوازم وررزشی در هر رشته هست که میتوانید از این سایت استفاده کنید">
+    <meta property="twitter:image" content="./images/icons/lifesports.png">
+
+    <meta name="description"
+        content="سایت لایف اسپرت برای خریداری راحت و امن لوازم وررزشی در هر رشته هست که میتوانید از این سایت استفاده کنید">
+    <meta name="keywords" content="لایف اسپرت, خرید لوازم ورزشی, ورزشی, خدمات ورزشی, lifesports">
+</head>
+
+<body>
+
+    <div class="loader w-100 bg-light d-grid justify-content-center align-items-center">
+        <div class="custom-loader"></div>
+    </div>
+
+    <header class="fixed-top">
+        <!-- Topbar Menu -->
+        <nav class="topbar b-radius-l mx-3 py-2 bg-white">
+            <div class="container-fluid">
+                <div class="topbar-content d-flex align-items-center">
+                    <div class="d-flex align-items-center lifesports me-1 me-sm-3">
+                        <a href="./index.html">
+
+                            <img src="./images/icons/lifesports.png" class="lifesports-icon img-fluid" alt="lifesports">
+                        </a>
+                    </div>
+
+                    <div class="search-product ms-auto position-relative">
+                        <input type="text" placeholder="جستوجوی کالا"
+                            class="form-control bg-light b-radius-s search-product-input fs-7">
+
+                        <button class="position-absolute b-radius-s btn-search d-flex px-3 py-2 fs-5 top-0">
+                            <i class="bi bi-search text-white"></i>
+                        </button>
+                    </div>
+
+                    <div class="login-register-user d-none d-lg-block ms-3">
+                        <a href="./login.html" type="text"
+                            class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center">
+                            <i class="bi bi-person-fill fs-4 me-1"></i>
+                            ثبت نام / ورود </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg b-radius-l px-sm-2 mx-3 bg-theme py-2 align-items-center d-flex">
+            <div class="container-fluid">
+
+                <!-- Navbar at PC And LapTop Device -->
+                <div class="collapse navbar-collapse d-none d-lg-block f-lalezar" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6" aria-current="page" href="./index.html">خانه</a>
+                        </li>
+                        <li class="nav-item b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6" href="./shop.html">فروشگاه</a>
+                        </li>
+                        <li class="nav-item dropdown b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6 dropdown-toggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                دسته بندی کالاها
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=لباس ورزشی"> لباس ورزشی
+                                    </a></li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=کفش ورزشی"> کفش ورزشی </a>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=توپ ورزشی"> توپ ورزشی </a>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=گرم کن ورزشی"> گرم کن ورزشی
+                                    </a></li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=ساک ورزشی"> ساک ورزشی </a>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=لوازم بزرگ ورزشی"> لوازم
+                                        بزرگ ورزشی</a></li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=لوازم کوچک ورزشی"> لوازم
+                                        کوچک ورزشی</a></li>
+                                <li><a class="dropdown-item py-2" href="./shop.html"> سایر کالاها </a></li>
+                            </ul>
+                        </li>
+                        <li id="special-institutions-btn-menu" class="nav-item b-radius-m me-1 p-0">
+                            <a href="/#special-institutions" class="nav-link px-4 text-white fs-6"
+                                aria-disabled="true">پیشنهادات</a>
+                        </li>
+                        <li class="nav-item b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6" href="./about-us.html">درباره ما</a>
+                        </li>
+                        <li class="nav-item b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6" href="./panel.html"> پنل مدیریت </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Navbar at Tablet And Phone Device -->
+                <div class="d-block d-lg-none">
+
+                    <button class="btn btn-navbar-toggle" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
+                        <div class="bg-white btn-navbar-toggle-item rounded-pill"></div>
+                        <div class="bg-white btn-navbar-toggle-item rounded-pill my-1"></div>
+                        <div class="bg-white btn-navbar-toggle-item rounded-pill"></div>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <div class="offcanvas-photo text-center">
+                                <a href="./index.html">
+
+                                    <img src="./images/icons/lifesports.png" class="offcanvas-title w-50"
+                                        alt="lifesports">
+                                </a>
+                            </div>
+
+                            <button type="button" class="btn btn-close-navbar me-1 bg-theme text-white circle p-1 px-2"
+                                data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="bi bi-x-lg fs-4"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body text-start">
+                            <ul class="f-lalezar m-0 px-2">
+
+                                <ul class="f-lalezar m-0 p-0">
+                                    <li class="fs-4 mb-2 nav-item rounded-pill bg-light p-2"><a href="./index.html"
+                                            class="nav-link">
+                                            <i class="bi bi-house me-1"></i>
+                                            خانه</a> </li>
+                                    <li class="fs-4 my-2 nav-item rounded-pill bg-light p-2"><a href="./shop.html"
+                                            class="nav-link">
+                                            <i class="bi bi-shop me-1"></i>
+                                            فروشگاه</a> </li>
+                                    <li class="fs-4 my-2 nav-item rounded-pill bg-light p-2"><a href="./about-us.html"
+                                            class="nav-link">
+                                            <i class="bi bi-people me-1"></i>
+                                            درباره ما </a></li>
+                                    <li class="fs-4 my-2 nav-item rounded-pill bg-light p-2"><a href="./about-us.html"
+                                            class="nav-link">
+                                            <i class="bi bi-chat-text me-1"></i>
+                                            ارتباط با ما </a></li>
+
+                                    <li class="nav-item rounded-pill bg-light p-2 dropdown">
+                                        <a class="nav-link fs-4 dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="bi bi-list me-1"></i>
+                                            دسته بندی کالاها
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=لباس ورزشی">
+                                                    لباس ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=کفش ورزشی"> کفش
+                                                    ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=توپ ورزشی"> توپ
+                                                    ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=گرم کن ورزشی">
+                                                    گرم کن ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=ساک ورزشی"> ساک
+                                                    ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2"
+                                                    href="./shop.html?category=لوازم بزرگ ورزشی"> لوازم بزرگ ورزشی</a>
+                                            </li>
+                                            <li><a class="dropdown-item py-2"
+                                                    href="./shop.html?category=لوازم کوچک ورزشی"> لوازم کوچک ورزشی</a>
+                                            </li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html"> سایر کالاها </a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login-register-user ms-auto me-3 me-sm-4 d-block d-lg-none ms-3">
+                    <a href="./login.html" type="text"
+                        class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center p-1 p-sm-2 justify-content-center">
+                        <i class="bi bi-person-fill fs-4 px-2"></i></a>
+                </div>
+
+                <a href="./cart.html" class="text-decoration-none position-relative">
+
+                    <span class="position-absolute top-0 start-0 badge rounded-pill count-cart fs-8 fw-300">
+                        9+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+
+                    <i
+                        class="bi bi-basket3-fill fs-4 text-white cart-icon pt-2 pb-1 d-block px-3 px-sm-4 b-radius-l"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="breadcrumb-content my-5 fs-7">
+
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"> <a href="./index.html" class="text-decoration-none"> لایف
+                            اسپرت </a></li>
+                    <li class="breadcrumb-item active"> ثبت سفارش </li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="row bg-light b-radius-m px-3 py-4 order">
+            <div class="col-12 col-md-6">
+                <h3 class="section-title fs-3 f-lalezar"> جزئیات صورتحساب </h3>
+                <form action="#" class="mb-5 mt-3" onsubmit="event.preventDefault()">
+                    <div class="form-floating mb-3">
+                        <input type="text" id="user-name" class="form-control fs-7" placeholder="نام تحویل گیرنده"
+                            required>
+                        <label for="user-name" class="fs-7">* نام تحویل گیرنده </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" id="user-family" class="form-control fs-7"
+                            placeholder="نام خانوادگی تحویل گیرنده" required>
+                        <label for="user-family" class="fs-7">* نام خانوادگی تحویل گیرنده</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" id="code-post" class="form-control fs-7" placeholder="کد پستی" required>
+                        <label for="code-post" class="fs-7">* کد پستی </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" id="user-phone-number" class="form-control fs-7" placeholder="شماره تلفن"
+                            required>
+                        <label for="user-phone-number" class="fs-7">* شماره تلفن </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" id="user-email" class="form-control fs-7" placeholder="شماره تلفن">
+                        <label for="user-email" class="fs-7"> آدرس ایمیل </label>
+                    </div>
+                </form>
+                <h3 class="section-title fs-3 f-lalezar mb-3"> آدرس شما </h3>
+                <div id="map"></div>
+            </div>
+            <div class="col-12 col-md-6 mt-5 mt-md-0">
+                <h3 class="section-title fs-3 f-lalezar"> سفارش شما </h3>
+                <div class="orders-wrapper mb-5 mt-3 bg-white border rounded-3 px-2">
+                    <div class="row title-table align-items-center mt-3">
+                        <div class="col-7">
+                            <p class="f-lalezar"> محصول </p>
+                        </div>
+                        <div class="col-5 justify-content-end d-flex">
+                            <p class="f-lalezar"> مبلغ </p>
+                        </div>
+                    </div>
+                    <div class="orders-content">
+
+                        <div class="row align-items-center pt-1 mt-3 body-table">
+                            <div class="col-7">
+                                <p class="fs-7 no-word-space product-title"> سویشرت ورزشی مردانه کد ADblM39 </p>
+                            </div>
+                            <div class="col-5 justify-content-end d-flex">
+                                <p class="product-price text-success fw-bold">
+                                    150,000,000
+                                    <span class="color-dark f-lalezar fs-7"> تومان </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center pt-1 mt-3 body-table">
+                            <div class="col-7">
+                                <p class="fs-7 no-word-space product-title"> سویشرت ورزشی مردانه کد ADblM39 </p>
+                            </div>
+                            <div class="col-5 justify-content-end d-flex">
+                                <p class="product-price text-success fw-bold">
+                                    150,000,000
+                                    <span class="color-dark f-lalezar fs-7"> تومان </span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="orders-footer">
+                        <div class="row align-items-center pt-1 mt-3 body-table">
+                            <div class="col-6">
+                                <p class="fs-7 no-word-space"> مجموع تخفیف </p>
+                            </div>
+                            <div class="col-6 justify-content-end d-flex">
+                                <p class="total-discount-price text-success fw-bold">
+                                    150,000,000
+                                    <span class="color-dark f-lalezar fs-7"> تومان </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center pt-1 mt-3">
+                            <div class="col-6">
+                                <p class="fs-7 no-word-space"> مجموع کل </p>
+                            </div>
+                            <div class="col-6 justify-content-end d-flex">
+                                <p class="total-price text-success fw-bold">
+                                    150,000,000
+                                    <span class="color-dark f-lalezar fs-7"> تومان </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-title fs-3 f-lalezar mb-3"> توضیحات تکمیلی </h3>
+                <form action="#">
+                    <textarea class="form-control p-2 fs-7" rows="7"
+                        placeholder="یادداشت‌ها درباره سفارش شما، برای مثال نکات مهم درباره نحوه تحویل سفارش"></textarea>
+                </form>
+
+                    <div class="payment p-3 mt-4 rounded-3">
+                        <span class="no-word-space">
+                            پرداخت امن زرین پال 
+                        </span>
+                        <img src="./images/icons/zarin-pall.png" alt="Zarin Pall" class="img-fluid ms-2">
+
+                        <div class="payment-box mt-3 mb-4 px-2 pt-3 pb-1 position-relative">
+                            <p class="fs-7 f-lalezar">پرداخت امن به وسیله کلیه کارت های عضو شتاب از طریق درگاه زرین پال</p>
+                        </div>
+
+                        <hr>
+
+                        <p class="no-word-space fs-7 payment-footer mt-4">
+                            Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our سیاست حفظ حریم خصوصی.
+                        </p>
+
+                        <button class="btn btn-success fs-7 mt-2"> ثبت سفارش </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="mt-5">
+        <section class="section-one px-3 text-white">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h3 class="f-lalezar"> لایف اسپرت </h3>
+                    <p class="mt-4">
+                        سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که میتوانید خیلی
+                        راحت محصول خود را یافته و آن را سفارش بدید و از آن استفاده کنید تمام چیز هایی ورزشی که میخواهید
+                        میتوانید در این سایت پیدا کنید ما در لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم
+                        از شما رضایت 100 در صدی داشته باشیم ما در لایف اسپرت این تضمین رو میدیم که خیلی راحت انتخاب کنید
+                        چون ما به شما مشاوره رایگان و تحویل محصول درب منزل و مرجوع کردن کالا رو میدیم تا شما مشتری عزیز
+                        با خیال راحت و آسوده محصول مورد نظر خود را سفارش دهید
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 text-start">
+                    <div class="row mt-5 mt-lg-0">
+                        <div class="col-6 col-sm-4">
+                            <h5 class="text-theme mb-4 title-item-footer"> دسترسی سریع </h5>
+                            <ul class="text-start p-lg-0">
+                                <li class="mb-3">
+                                    <a href="./shop.html" class="text-decoration-none text-white fs-7"> فروشگاه </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="./index.html#special-institutions" class="text-decoration-none text-white fs-7">
+                                        پیشنهادات </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="./about-us.html#contact-us-scroll"
+                                        class="text-decoration-none text-white fs-7" id="contact-us"> ارتباط با ما
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./about-us.html" class="text-decoration-none text-white fs-7"> درباره ما
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <h5 class="text-theme mb-4 title-item-footer"> با لایف اسپرت </h5>
+                            <ul class="text-start">
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> ضمانت کالا
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> تحویل درب
+                                        منزل </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> تخفیفات
+                                        ویژه </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> امکان
+                                        مرجوع کالا </a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> پشتیبانی
+                                        24 ساعته </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <h5 class="text-theme mb-4 title-item-footer"> ارتباط با ما </h5>
+                            <ul class="text-start">
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-white fs-7"> اینستاگرام </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-white fs-7"> تلگرام </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-white fs-7"> ایمیل </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-white fs-7"> شماره تماس </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-two">
+            <div class="px-3 d-grid justify-content-center">
+                <img src="./images/gallery-items/gallery-item6.png" alt="gallery-item6" class="footer-image img-fluid">
+            </div>
+
+            <div class="caption-footer-img text-center mb-4">
+                <span class="f-lalezar fs-5"> ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم </span>
+            </div>
+
+            <div class="text-center mb-4">
+                <img src="./images/icons/namad.png" alt="namad">
+            </div>
+
+            <div class="text-center mb-2">
+                <span>
+                    تمام حقوق برای لایف اسپرت محفوظ است
+                </span>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="./js/features/loader.js"></script>
+
+    <script>
+        let map = L.map('map').setView([35.68602354632837, 51.39953613281251], 6);
+        let marker = L.marker([35.68602354632837, 51.39953613281251]).addTo(map);
+        let point = L.point(200, 300);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        map.on('click', event => marker.setLatLng(event.latlng));
+
+    </script>
+</body>
+
+</html>

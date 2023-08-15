@@ -1,0 +1,207 @@
+@import "header";
+@import "footer";
+@import "spinner";
+
+.container {
+    margin-top: 11rem;
+}
+
+.cart-wrapper {
+    box-shadow: 0 10px 50px #0000001f;
+
+    @include responsivePage(S) {
+        box-shadow: none !important;
+    }
+
+    /* Start Delete All Products */
+
+    .btn-delete-all-products {
+        width: 6rem;
+    }
+
+    /* Finish Delete All Products */
+
+
+    /* Start Products In Cart */
+
+    .products {
+        border: 1px solid $secondary-400;
+    }
+
+    .delete-product-cart {
+        border: none;
+        transition: .25s;
+        background: #fcd3d3;
+
+        &:hover {
+            color: #fff !important;
+            background: #ee232b;
+        }
+    }
+
+    .value-discount-off {
+        border-radius: 50px 40px 40px 0;
+    }
+
+    .product-image {
+
+        @include responsivePage(L) {
+            width: 45% !important;
+            height: 45% !important;
+        }
+
+        @include responsivePage(S) {
+            width: 65% !important;
+            height: 65% !important;
+        }
+
+        @include responsivePage(XS) {
+            width: 80% !important;
+            height: 80% !important;
+        }
+    }
+
+    .product-title {
+        transition: .25s;
+        text-align: justify;
+
+        &:hover {
+            color: $theme-color !important;
+        }
+
+        @include responsivePage(S) {
+            font-size: .9rem !important;
+        }
+    }
+
+    .product-price {
+        @include responsivePage(S) {
+            text-align: center;
+        }
+    }
+
+    .discount {
+        @include responsivePage(S) {
+            font-size: .7rem !important;
+        }
+    }
+
+    .price {
+
+        @include responsivePage(S) {
+            font-size: .9rem !important;
+        }
+
+        .title-price {
+            @include responsivePage(S) {
+                font-size: .8rem !important;
+            }
+        }
+    }
+
+    .add-minus-product-count {
+
+        @include responsivePage(L) {
+            float: left;
+        }
+
+        @include responsivePage(S) {
+            float: none !important;
+            justify-content: center;
+        }
+    }
+
+    .minus-count,
+    .add-count {
+        background: none;
+        border: none;
+    }
+
+    /* Start Products In Cart */
+
+
+    /* Start Bottombar */
+
+    .input-discount-code {
+        width: 16rem;
+
+        @include responsivePage(S) {
+            width: 14rem;
+        }
+
+        @include responsivePage(XS) {
+            width: 100% !important;
+        }
+
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .btn-accept-discount-code {
+        transition: .25s;
+
+        &:hover {
+            background-color: #ee232b !important;
+        }
+
+        @include responsivePage(XS) {
+            margin-top: .7rem !important;
+        }
+    }
+
+    .total-price {
+        background-color: #e4f0da;
+
+        .title-total {
+            word-spacing: -2px;
+
+            @include responsivePage(S) {
+                font-size: .8rem !important;
+            }
+        }
+
+        .total-price-cart {
+            color: #67b930 !important;
+
+            @include responsivePage(L) {
+                font-size: 1.5rem !important;
+            }
+
+            @include responsivePage(XS) {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+
+    .btn-continue-order {
+        background-color: #67b930;
+        transition: .25s;
+
+        &:hover {
+            filter: brightness(90%);
+        }
+    }
+
+    /* Finish Bottombar */
+}
+
+/* Start Emptybag Message */
+
+.emptybag-message {
+
+    img {
+        width: 20rem;
+    }
+
+    p {
+        margin-top: -20px;
+    }
+
+    .go-shop {
+        background-color: #67b930;
+    }
+}
+
+/* Finish Emptybag Message */

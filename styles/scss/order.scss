@@ -1,0 +1,82 @@
+@import "header";
+@import "footer";
+@import "spinner";
+
+.container {
+    margin-top: 11rem;
+}
+
+#map {
+    user-select: none;
+    height: 20rem;
+}
+
+.order {
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: none !important;
+    direction: rtl !important;
+}
+
+.orders-wrapper {
+
+    .title-table,
+    .body-table {
+        border-bottom: 1px solid $secondary-400;
+        margin: -8px;
+
+    }
+
+    @include responsivePage(S) {
+
+        .product-price,
+        .total-price,
+        .total-discount-price {
+            font-size: .85rem !important;
+        }
+
+        .product-title {
+            font-size: .72rem !important;
+        }
+    }
+}
+
+.no-word-space {
+    word-spacing: -2px;
+}
+
+.payment {
+    background-color: #ddd !important;
+
+    span {
+        font-size: .8rem;
+    }
+
+    .payment-box {
+        box-sizing: border-box;
+        border-radius: 2px;
+        line-height: 1.2rem;
+        background-color: #ccc;
+
+        &::before {
+            content: "";
+            display: block;
+            border: 1em solid #ccc;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-top-color: transparent;
+            position: absolute;
+            top: -0.75em;
+            right: 0;
+            margin: -1em 2em 0 0;
+        }
+    }
+
+    .payment-footer {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+}

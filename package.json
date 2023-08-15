@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.10.5",
+    "leaflet": "^1.9.4",
+    "sass": "^1.64.1",
+    "swiper": "^10.0.4"
+  }
+}

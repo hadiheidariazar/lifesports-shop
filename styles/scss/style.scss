@@ -1,0 +1,247 @@
+@import "header";
+@import "footer";
+@import "spinner";
+
+.container {
+    margin-top: 9.5rem;
+}
+
+@include cardProductStyle;
+
+.value-discount-off {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+}
+
+/* Start First Slider Section */
+
+.first-slider {
+    user-select: none;
+
+    .swiper-slide img {
+        object-fit: cover;
+    }
+
+    .swiper-button-next {
+        @include responsivePage(M) {
+            transform: scale(.5);
+            margin: -75px 0px 0 -130px;
+            border: 2px solid $white-color;
+            padding: 2.5rem;
+            color: $white-color;
+            border-radius: 5rem;
+            top: 100%;
+            left: 100%;
+        }
+
+        @include responsivePage(XS) {
+            transform: scale(.4);
+            margin: -67px 0px 0 -120px;
+        }
+    }
+
+    .swiper-button-prev {
+        @include responsivePage(M) {
+            transform: scale(.5);
+            margin: -75px -10px 0 0;
+            border: 2px solid $white-color;
+            padding: 2.5rem;
+            color: $white-color;
+            border-radius: 5rem;
+            top: 100%;
+        }
+
+        @include responsivePage(XS) {
+            transform: scale(.4);
+            margin: -67px -15px 0 0;
+        }
+    }
+
+    .swiper-pagination {
+        @include responsivePage(S) {
+            margin-bottom: -7px;
+        }
+    }
+}
+
+/* Finish First Slider Section */
+
+
+/* Start Category Products Section */
+
+.category-products-card {
+    border: 1px solid $secondary-500;
+    user-select: none;
+    transition: .25s;
+
+    &:hover {
+        filter: brightness(65%);
+    }
+
+    img {
+        width: 6rem;
+    }
+
+    .title-category {
+        height: 3rem;
+    }
+
+    .all-category {
+        font-size: 3.5rem;
+    }
+}
+
+/* Finish Category Products Section */
+
+
+/* Start Special institutions Section */
+
+.section-special-institutions {
+    margin-top: 8rem;
+
+    .special-institutions {
+        height: max-content;
+
+        @include sliderStyle;
+
+        .btn-next-second-slider {
+            transform: scale(.4) !important;
+            margin: -.8rem -135px 0px 0px;
+            border: 1px solid $white-color;
+        }
+
+        .btn-prev-second-slider {
+            transform: scale(.4) !important;
+            margin: -.8rem -90px 0px 0px;
+            border: 1px solid $white-color;
+        }
+
+        .title-special-institutions {
+            width: 83%;
+            height: 23rem;
+            background-image: url('./../../images/slider-items/bg-ronaldo.png');
+            background-repeat: no-repeat;
+
+            @include responsivePage(XL) {
+                height: 20rem;
+            }
+
+            @include responsivePage(L) {
+                height: 22rem;
+            }
+
+            @include responsivePage(M) {
+                height: 18.5rem;
+            }
+
+            @include responsivePage(S) {
+                width: 18rem;
+            }
+
+            img {
+                transform: translate(-60px, 15px);
+
+                @include responsivePage(L) {
+                    transform: translate(-50px, 70px);
+                }
+
+                @include responsivePage(M) {
+                    transform: translate(-30px, 70px);
+                }
+
+                @include responsivePage(S) {
+                    transform: translate(-50px, -20px);
+                }
+            }
+
+            h4 {
+                transform: translate(-15px, 50px);
+            }
+        }
+    }
+}
+
+/* Finish Special institutions Section */
+
+
+/* Start The best selling women's and man's sportswear Section */
+
+.section-best-sellers-women,
+.section-best-sellers-man {
+    margin-top: 7rem;
+
+    .top-side {
+        background: linear-gradient(to left, #f7d293, #fff8ea);
+
+        img {
+            width: 50px;
+        }
+
+
+        .col-12 {
+            @include responsivePage(S) {
+                justify-content: center !important;
+            }
+        }
+
+        .title-best-sellers-women {
+            font-size: 1.4rem;
+            word-spacing: -3px;
+
+            @include responsivePage(S) {
+                font-size: 1rem;
+            }
+        }
+
+        .all-best-sellers-women-btn {
+            background: none;
+            border: 2px solid $dark-color;
+            transition: .25s;
+
+            &:hover {
+                background: $dark-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    @include sliderStyle;
+
+    .btn-next-third-slider,
+    .btn-prev-third-slider {
+        transform: scale(.8);
+        padding: 2rem;
+
+        @include responsivePage(L) {
+            transform: scale(.6) !important;
+        }
+
+        @include responsivePage(S) {
+            transform: scale(.5) !important;
+        }
+    }
+}
+
+/* Finish The best selling women's and man's sportswear Section */
+
+.one-gallery-img {
+    margin-top: 7rem;
+
+    @include responsivePage(M) {
+        margin-top: 4rem;
+    }
+}
+
+
+/* Start About Us Section */
+
+.section-about-us {
+    margin-top: 7rem;
+
+    .text-about-us-content {
+        background: linear-gradient(to top left, #8ed1fc 2%, #fff 55%);
+    }
+}
+
+/* Finish About Us Section */

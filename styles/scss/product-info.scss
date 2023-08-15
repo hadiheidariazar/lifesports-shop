@@ -1,0 +1,307 @@
+@import "header";
+@import "footer";
+@import "spinner";
+
+.container {
+    margin-top: 11rem;
+
+    .breadcrumb-content {
+        @include responsivePage(S) {
+            font-size: .7rem !important;
+        }
+    }
+
+}
+
+@include cardProductStyle;
+
+.value-discount-off {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+}
+
+.value-discount {
+    text-decoration: line-through;
+}
+
+.title-section-bottombar {
+    word-spacing: -4px;
+}
+
+
+/* Start Section Main Product Swiper Photos */
+
+
+.score-photo {
+    width: 20px;
+    height: 16px;
+    margin-bottom: 8px;
+}
+
+.main-slide {
+    cursor: crosshair;
+}
+
+.product-photos {
+    background-color: #ddd;
+    user-select: none;
+}
+
+.swiper-button-next {
+    margin: -40px 0px 0px -25px;
+    transform: scale(.5);
+    padding: 2.5rem;
+}
+
+.swiper-button-prev {
+    margin: -40px -25px 0px 0px;
+    transform: scale(.5);
+    padding: 2.5rem;
+}
+
+.mySwiper2 {
+    height: 80%;
+
+    .value-discount-off {
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+
+    .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+}
+
+/* Finish Section Main Product Swiper Photos */
+
+
+/* Start Section Main Product Infos */
+
+/* Start Product Title */
+
+.title-product {
+    height: 2.8rem;
+    line-height: 1.3rem;
+
+    @include responsivePage(XS) {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* Finish Product Title */
+
+/* Start Availability of Main Product in Stock */
+
+.category-and-availability-stock {
+    border-bottom: 1px solid $dark-color;
+    border-top: 1px solid $dark-color;
+    justify-content: space-between;
+
+    .category {
+        color: #999;
+    }
+
+    .title-category {
+        @include responsivePage(XS) {
+            font-size: .8rem;
+        }
+    }
+
+    /* Availability in Stock */
+    .title-availability-stock {
+        background-color: #b4e9bc;
+
+        .title-availability-stock-icon {
+            transform: translateY(5px);
+        }
+    }
+
+
+    /* Not Availability in Stock */
+    .title-not-availability-stock {
+        background-color: #e9b4b4;
+
+        .title-not-availability-stock-icon {
+            transform: translateY(6px);
+        }
+    }
+}
+
+/* Finish Availability of Main Product in Stock */
+
+/* Start Section Select Size and Color Main Product */
+
+.select-size-color {
+    border-bottom: 1px solid $dark-color;
+    justify-content: space-between;
+
+    .color {
+        width: 1rem;
+        height: 1rem;
+        margin-bottom: -4px;
+        cursor: pointer;
+    }
+
+    .selected-color {
+        transform: scale(1.5);
+    }
+}
+
+/* Finish Section Select Size and Color Main Product */
+
+/* Start Section Six Propertys Main Product */
+
+.six-propertys-product {
+    border-bottom: 1px solid $dark-color;
+
+    h5 {
+        border-bottom: 2px solid $theme-color;
+    }
+
+    .value-property-product {
+        width: 75%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        direction: rtl;
+        margin-bottom: -6px;
+
+        @include responsivePage(XS) {
+            width: 100%;
+        }
+    }
+}
+
+/* Finish Section Six Propertys Main Product */
+
+/* Finish Section Main Product Infos */
+
+
+/* Start Section Bottom Bar */
+
+/* Start Section Propertys Main Product */
+
+.bottombar-product-info {
+    margin-top: 7rem;
+
+    .menu-bottombar .nav-item {
+
+        @include responsivePage(S) {
+            font-size: .8rem;
+        }
+
+        @include responsivePage(XS) {
+            font-size: .7rem;
+        }
+    }
+
+
+    .title-property {
+        direction: rtl;
+    }
+}
+
+/* Finish Section Propertys Main Product */
+
+/* Start Section Comments and Questions Main Product */
+
+.form-control {
+    display: inline-block;
+}
+
+.text-comment,
+.text-question,
+.text-reply-comment,
+.text-reply-question {
+    text-align: justify;
+
+    @include responsivePage(S) {
+        font-size: .8rem;
+    }
+}
+
+.btn-all-comments,
+.btn-all-questions {
+    transform: translateY(-20px);
+}
+
+/* Finish Section Comments and Questions Main Product */
+
+/* Start Section Related Products */
+
+.related-products {
+    margin-top: 7rem;
+
+    .top-side {
+
+        .title-related-product {
+            font-size: 1.4rem;
+            word-spacing: -3px;
+
+            @include responsivePage(S) {
+                font-size: 1rem;
+            }
+        }
+
+        .btn-all-related-products {
+            background: none;
+            border: 2px solid $dark-color;
+            transition: .25s;
+
+            &:hover {
+                background: $dark-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    @include sliderStyle;
+
+    .btn-next-related-product-slider,
+    .btn-prev-related-product-slider {
+        transform: scale(.8);
+        padding: 2rem;
+
+        @include responsivePage(L) {
+            transform: scale(.6) !important;
+        }
+
+        @include responsivePage(S) {
+            transform: scale(.5) !important;
+        }
+    }
+
+    .btn-next-related-product-slider {
+        margin-left: -10px;
+        
+        @include responsivePage(L) {
+            margin-left: -18px;
+        }
+    }
+
+    .btn-prev-related-product-slider {
+        margin-right: -10px;
+        
+        @include responsivePage(L) {
+            margin-right: -18px;
+        }
+    }
+}
+
+/* Finish Section Related Products */
+
+/* Finish Section Bottom Bar */

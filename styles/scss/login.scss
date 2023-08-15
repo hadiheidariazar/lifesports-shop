@@ -1,0 +1,31 @@
+@import "header";
+@import "footer";
+@import "spinner";
+
+
+.container {
+    margin-top: 11rem;
+}
+
+.name-input,
+.family-input,
+.phone-number-input,
+.password-input {
+    word-spacing: -2px;
+    direction: rtl;
+
+    @include responsivePage(S) {
+        font-size: .7rem !important;
+    }
+}
+
+.password-input {
+    padding-left: 35px;
+}
+
+#password-icon {
+    position: absolute;
+    cursor: pointer;
+    margin: -28px 0px 0px 20px !important;
+    left: 0 !important;
+}

@@ -1,0 +1,95 @@
+@import "header";
+@import "footer";
+@import "spinner";
+
+.container {
+    margin-top: 11rem;
+}
+
+/* Start Grouping Products */
+
+.dropdown-menu {
+    a {
+        transition: .25s;
+    }
+
+    .first-item {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .last-item {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    a:focus,
+    a:hover,
+    .active {
+        background-color: $theme-color;
+        color: #fff;
+    }
+}
+
+/* Finish Grouping Products */
+
+
+/* Start Products */
+
+.container-products {
+    margin-top: 6rem;
+
+    .card {
+        transition: .25s;
+
+        &:hover {
+            box-shadow: 0 10px 50px #0000003d
+        }
+    }
+
+    .product-title {
+        height: 4rem;
+        overflow-y: hidden;
+
+        .card-title {
+            transition: .25s;
+            font-size: 0.9rem;
+            line-height: 0.9rem;
+
+            &:hover {
+                color: $theme-color !important;
+            }
+
+            @include responsivePage(XS) {
+                font-size: .8rem !important;
+            }
+        }
+    }
+
+    .product-discount {
+        height: 1.3rem;
+
+        .discount {
+            font-size: 0.9rem;
+            line-height: 12px;
+
+            @include responsivePage(XS) {
+                font-size: .8rem !important;
+            }
+        }
+    }
+
+    .price {
+        @include responsivePage(XS) {
+            font-size: .9rem !important;
+        }
+    }
+
+    .value-discount-off {
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+}
+
+/* Finish Products */

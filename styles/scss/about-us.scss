@@ -1,0 +1,16 @@
+@import "header";
+@import "footer";
+@import "spinner";
+
+.container {
+    margin-top: 11rem;
+}
+
+.about-us{
+    text-align: justify;
+}
+
+li {
+    list-style-type: disc;
+    color: $theme-color;
+}

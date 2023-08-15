@@ -1,0 +1,19 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 9  | /     @include responsivePage(XS) {
+ * 10 | |         padding-top: 4rem;
+ * 11 | |         padding-bottom: 4rem;
+ * 12 | \     }
+ *    '
+ *   styles\scss\footer.scss 9:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 9  \2502  \250c      @include responsivePage(XS) {\a 10 \2502  \2502          padding-top: 4rem;\a 11 \2502  \2502          padding-bottom: 4rem;\a 12 \2502  \2514      }\a    \2575 \a   styles\\scss\\footer.scss 9:5  root stylesheet";
+}

@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./styles/css/product-info.css">
+    <link rel="icon" href="./images/icons/icon-tab.png">
+
+    <!-- Primary Meta Tags -->
+    <title> مشحصات محصول - لایف اسپرت </title>
+    <meta name="title" content="فروشگاه اینترنتی لایف اسپرت">
+    <meta name="description"
+        content="سایت لایف اسپرت برای خریداری راحت و امن لوازم وررزشی در هر رشته هست که میتوانید از این سایت استفاده کنید">
+    <meta name="keywords" content="لایف اسپرت, خرید لوازم ورزشی, ورزشی, خدمات ورزشی, lifesports"">
+
+    <!-- Open Graph / Facebook -->
+    <meta property=" og:type" content="website">
+    <meta property="og:url" content="https://hadiheidariazar.github.io/lifesports/">
+    <meta property="og:title" content="فروشگاه اینترنتی لایف اسپرت">
+    <meta property="og:description"
+        content="سایت لایف اسپرت برای خریداری راحت و امن لوازم وررزشی در هر رشته هست که میتوانید از این سایت استفاده کنید">
+    <meta property="og:image" content="./images/icons/lifesports.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hadiheidariazar.github.io/lifesports/">
+    <meta property="twitter:title" content="فروشگاه اینترنتی لایف اسپرت">
+    <meta property="twitter:description"
+        content="سایت لایف اسپرت برای خریداری راحت و امن لوازم وررزشی در هر رشته هست که میتوانید از این سایت استفاده کنید">
+    <meta property="twitter:image" content="./images/icons/lifesports.png">
+
+    <meta name="description"
+        content="سایت لایف اسپرت برای خریداری راحت و امن لوازم وررزشی در هر رشته هست که میتوانید از این سایت استفاده کنید">
+    <meta name="keywords" content="لایف اسپرت, خرید لوازم ورزشی, ورزشی, خدمات ورزشی, lifesports">
+</head>
+
+<body>
+
+    <div class="loader w-100 bg-light d-grid justify-content-center align-items-center">
+        <div class="custom-loader"></div>
+    </div>
+
+    <header class="fixed-top">
+        <!-- Topbar Menu -->
+        <nav class="topbar b-radius-l mx-3 py-2 bg-white">
+            <div class="container-fluid">
+                <div class="topbar-content d-flex align-items-center">
+                    <div class="d-flex align-items-center lifesports me-1 me-sm-3">
+                        <a href="./index.html">
+
+                            <img src="./images/icons/lifesports.png" class="lifesports-icon img-fluid" alt="lifesports">
+                        </a>
+                    </div>
+
+                    <div class="search-product ms-auto position-relative">
+                        <input type="text" placeholder="جستوجوی کالا"
+                            class="form-control bg-light b-radius-s search-product-input fs-7">
+
+                        <button class="position-absolute b-radius-s btn-search d-flex px-3 py-2 fs-5 top-0">
+                            <i class="bi bi-search text-white"></i>
+                        </button>
+                    </div>
+
+                    <div class="login-register-user d-none d-lg-block ms-3">
+                        <a href="./login.html" type="text"
+                            class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center">
+                            <i class="bi bi-person-fill fs-4 me-1"></i>
+                            ثبت نام / ورود </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg b-radius-l px-sm-2 mx-3 bg-theme py-2 align-items-center d-flex">
+            <div class="container-fluid">
+
+                <!-- Navbar at PC And LapTop Device -->
+                <div class="collapse navbar-collapse d-none d-lg-block f-lalezar" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6" aria-current="page" href="./index.html">خانه</a>
+                        </li>
+                        <li class="nav-item b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6" href="./shop.html">فروشگاه</a>
+                        </li>
+                        <li class="nav-item dropdown b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6 dropdown-toggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                دسته بندی کالاها
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=لباس ورزشی"> لباس ورزشی
+                                    </a></li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=کفش ورزشی"> کفش ورزشی </a>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=توپ ورزشی"> توپ ورزشی </a>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=گرم کن ورزشی"> گرم کن ورزشی
+                                    </a></li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=ساک ورزشی"> ساک ورزشی </a>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=لوازم بزرگ ورزشی"> لوازم
+                                        بزرگ ورزشی</a></li>
+                                <li><a class="dropdown-item py-2" href="./shop.html?category=لوازم کوچک ورزشی"> لوازم
+                                        کوچک ورزشی</a></li>
+                                <li><a class="dropdown-item py-2" href="./shop.html"> سایر کالاها </a></li>
+                            </ul>
+                        </li>
+                        <li id="special-institutions-btn-menu" class="nav-item b-radius-m me-1 p-0">
+                            <a href="/#special-institutions" class="nav-link px-4 text-white fs-6"
+                                aria-disabled="true">پیشنهادات</a>
+                        </li>
+                        <li class="nav-item b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6" href="./about-us.html">درباره ما</a>
+                        </li>
+                        <li class="nav-item b-radius-m me-1 p-0">
+                            <a class="nav-link px-4 text-white fs-6" href="./panel.html"> پنل مدیریت </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Navbar at Tablet And Phone Device -->
+                <div class="d-block d-lg-none">
+
+                    <button class="btn btn-navbar-toggle" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
+                        <div class="bg-white btn-navbar-toggle-item rounded-pill"></div>
+                        <div class="bg-white btn-navbar-toggle-item rounded-pill my-1"></div>
+                        <div class="bg-white btn-navbar-toggle-item rounded-pill"></div>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <div class="offcanvas-photo text-center">
+                                <a href="./index.html">
+
+                                    <img src="./images/icons/lifesports.png" class="offcanvas-title w-50"
+                                        alt="lifesports">
+                                </a>
+                            </div>
+
+                            <button type="button" class="btn btn-close-navbar me-1 bg-theme text-white circle p-1 px-2"
+                                data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="bi bi-x-lg fs-4"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body text-start">
+                            <ul class="f-lalezar m-0 px-2">
+
+                                <ul class="f-lalezar m-0 p-0">
+                                    <li class="fs-4 mb-2 nav-item rounded-pill bg-light p-2"><a href="./index.html"
+                                            class="nav-link">
+                                            <i class="bi bi-house me-1"></i>
+                                            خانه</a> </li>
+                                    <li class="fs-4 my-2 nav-item rounded-pill bg-light p-2"><a href="./shop.html"
+                                            class="nav-link">
+                                            <i class="bi bi-shop me-1"></i>
+                                            فروشگاه</a> </li>
+                                    <li class="fs-4 my-2 nav-item rounded-pill bg-light p-2"><a href="./about-us.html"
+                                            class="nav-link">
+                                            <i class="bi bi-people me-1"></i>
+                                            درباره ما </a></li>
+                                    <li class="fs-4 my-2 nav-item rounded-pill bg-light p-2"><a href="./about-us.html"
+                                            class="nav-link">
+                                            <i class="bi bi-chat-text me-1"></i>
+                                            ارتباط با ما </a></li>
+
+                                    <li class="nav-item rounded-pill bg-light p-2 dropdown">
+                                        <a class="nav-link fs-4 dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="bi bi-list me-1"></i>
+                                            دسته بندی کالاها
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=لباس ورزشی">
+                                                    لباس ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=کفش ورزشی"> کفش
+                                                    ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=توپ ورزشی"> توپ
+                                                    ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=گرم کن ورزشی">
+                                                    گرم کن ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html?category=ساک ورزشی"> ساک
+                                                    ورزشی </a></li>
+                                            <li><a class="dropdown-item py-2"
+                                                    href="./shop.html?category=لوازم بزرگ ورزشی"> لوازم بزرگ ورزشی</a>
+                                            </li>
+                                            <li><a class="dropdown-item py-2"
+                                                    href="./shop.html?category=لوازم کوچک ورزشی"> لوازم کوچک ورزشی</a>
+                                            </li>
+                                            <li><a class="dropdown-item py-2" href="./shop.html"> سایر کالاها </a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login-register-user ms-auto me-3 me-sm-4 d-block d-lg-none ms-3">
+                    <a href="./login.html" type="text"
+                        class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center p-1 p-sm-2 justify-content-center">
+                        <i class="bi bi-person-fill fs-4 px-2"></i></a>
+                </div>
+
+                <a href="./cart.html" class="text-decoration-none position-relative">
+
+                    <span class="position-absolute top-0 start-0 badge rounded-pill count-cart fs-8 fw-300">
+                        9+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+
+                    <i
+                        class="bi bi-basket3-fill fs-4 text-white cart-icon pt-2 pb-1 d-block px-3 px-sm-4 b-radius-l"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+        <div class="breadcrumb-content my-5 fs-7">
+
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"> <a href="./index.html" class="text-decoration-none"> لایف
+                            اسپرت </a></li>
+                    <li class="breadcrumb-item" aria-current="page"> <a href="./shop.html?category=لباس ورزشی"
+                            class="text-decoration-none"> لباس ورزشی </a></li>
+                    <li class="breadcrumb-item active"> لباس ورزشی مردانه طرح پاریس سن ژرمن </li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Modals Section -->
+        <section class="modals">
+            <div class="modal fade" id="comment-modal" tabindex="-1" aria-labelledby="comment-modal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-center">
+                            <h1 class="modal-title fs-5" id="comment-modal"> مطمئنی میخوای نظرت رو ثبت کنی؟ </h1>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-outline-danger w-100" data-bs-dismiss="modal">
+                                        نه دستم خورد </button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-success like-add-comment w-100"
+                                        data-bs-dismiss="modal"> اره ثبت
+                                        کن </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="question-modal" tabindex="-1" aria-labelledby="question-modal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-center">
+                            <h1 class="modal-title fs-5" id="question-modal"> مطمئنی میخوای پرسشت رو ثبت کنی؟ </h1>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-outline-danger w-100" data-bs-dismiss="modal">
+                                        نه دستم خورد </button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-success w-100 like-add-question"
+                                        data-bs-dismiss="modal"> اره ثبت
+                                        کن </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="reply-comment-modal" tabindex="-1" aria-labelledby="answer-modal-Label"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="answer-modal-Label"> پاسخ شما </h1>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <textarea class="answer-input reply-comment form-control" id="recipient-name" rows="5"
+                                    placeholder="پاسخ خود را وارد کنید..."></textarea>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row w-100">
+                                <div class="col-6 d-flex align-items-center">
+                                    <button type="button" class="btn btn-success btn-submit-answer-comment w-100"
+                                        data-bs-dismiss="modal"> ارسال
+                                        پاسخ </button>
+                                </div>
+                                <div class="col-6 d-flex align-items-center">
+                                    <button type="button" class="btn btn-outline-danger w-100" data-bs-dismiss="modal">
+                                        منصرف شدن </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="reply-question-modal" tabindex="-1" aria-labelledby="answer-modal-Label"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="answer-modal-Label"> پاسخ شما </h1>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <textarea class="answer-input reply-question form-control" id="recipient-name" rows="5"
+                                    placeholder="پاسخ خود را وارد کنید..."></textarea>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row w-100">
+                                <div class="col-6 d-flex align-items-center">
+                                    <button type="button" class="btn btn-success btn-submit-answer-question w-100"
+                                        data-bs-dismiss="modal"> ارسال
+                                        پاسخ </button>
+                                </div>
+                                <div class="col-6 d-flex align-items-center">
+                                    <button type="button" class="btn btn-outline-danger w-100" data-bs-dismiss="modal">
+                                        منصرف شدن </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- TopBar Section -->
+        <section class="topbar-product-info">
+            <div class="row align-items-center">
+
+                <!-- Main Product Photos Section -->
+                <div class="col-12 col-lg-5 product-photos b-radius-m p-3">
+                    <div class="product-photos-content b-radius-m">
+
+                        <!-- Swiper Slide Photos Main Product -->
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2 mx-auto w-100 h-100 w-100">
+
+                            <!-- Slider Items -->
+                            <div class="swiper-wrapper main-product-photos-top">
+
+                                <div class="swiper-slide main-slide position-relative bg-white rounded-2">
+
+                                    <div class="swiper-zoom-container">
+
+                                        <img src="./images/products/man-sports-sweatshirt1.png"
+                                            alt="man-sports-sweatshirt1"
+                                            class="w-100 h-100 d-block rounded-2 img-fluid m-1 m-sm-2" />
+
+                                    </div>
+
+                                    <span
+                                        class="position-absolute top-0 end-0 badge value-discount-off py-2 px-3 bg-danger fs-6 f-lalezar fw-300">
+                                        50%
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+
+                                    <span
+                                        class="position-absolute color-dark top-0 start-0 badge value-score fs-5 f-lalezar fw-300">
+
+                                        <img src="./images/icons/star.png" alt="star" class="img-fluid score-photo">
+
+                                        4
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide main-slide position-relative bg-white rounded-2">
+
+                                    <div class="swiper-zoom-container">
+
+                                        <img src="./images/products/man-sports-sweatshirt1.png"
+                                            alt="man-sports-sweatshirt1"
+                                            class="w-100 h-100 d-block rounded-2 img-fluid m-1 m-sm-2" />
+
+                                    </div>
+
+                                    <span
+                                        class="position-absolute top-0 end-0 badge value-discount-off py-2 px-3 bg-danger fs-6 f-lalezar fw-300">
+                                        50%
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+
+                                    <span
+                                        class="position-absolute color-dark top-0 start-0 badge value-score fs-5 f-lalezar fw-300">
+
+                                        <img src="./images/icons/star.png" alt="star" class="img-fluid score-photo">
+
+                                        4
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide main-slide position-relative bg-white rounded-2">
+
+                                    <div class="swiper-zoom-container">
+
+                                        <img src="./images/products/man-sports-sweatshirt1.png"
+                                            alt="man-sports-sweatshirt1"
+                                            class="w-100 h-100 d-block rounded-2 img-fluid m-1 m-sm-2" />
+
+                                    </div>
+
+                                    <span
+                                        class="position-absolute top-0 end-0 badge value-discount-off py-2 px-3 bg-danger fs-6 f-lalezar fw-300">
+                                        50%
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+
+                                    <span
+                                        class="position-absolute color-dark top-0 start-0 badge value-score fs-5 f-lalezar fw-300">
+
+                                        <img src="./images/icons/star.png" alt="star" class="img-fluid score-photo">
+
+                                        4
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide main-slide position-relative bg-white rounded-2">
+
+                                    <div class="swiper-zoom-container">
+
+                                        <img src="./images/products/man-sports-sweatshirt1.png"
+                                            alt="man-sports-sweatshirt1"
+                                            class="w-100 h-100 d-block rounded-2 img-fluid m-1 m-sm-2" />
+
+                                    </div>
+
+                                    <span
+                                        class="position-absolute top-0 end-0 badge value-discount-off py-2 px-3 bg-danger fs-6 f-lalezar fw-300">
+                                        50%
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+
+                                    <span
+                                        class="position-absolute color-dark top-0 start-0 badge value-score fs-5 f-lalezar fw-300">
+
+                                        <img src="./images/icons/star.png" alt="star" class="img-fluid score-photo">
+
+                                        4
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Slider Bottom -->
+                        <div thumbsSlider="" class="swiper mySwiper mx-auto w-100 h-100">
+
+                            <!-- Slider Items -->
+                            <div class="swiper-wrapper main-product-photos-bottom">
+                                <div class="swiper-slide bg-white rounded-2 p-1 p-sm-2">
+                                    <img src="./images/products/man-sports-sweatshirt1.png" alt="man-sports-sweatshirt1"
+                                        class="w-100 h-100 d-block rounded-2 img-fluid" />
+                                </div>
+                                <div class="swiper-slide bg-white rounded-2 p-1 p-sm-2">
+                                    <img src="./images/products/man-sports-sweatshirt1.png" alt="man-sports-sweatshirt1"
+                                        class="w-100 h-100 d-block rounded-2 img-fluid" />
+                                </div>
+                                <div class="swiper-slide bg-white rounded-2 p-1 p-sm-2">
+                                    <img src="./images/products/man-sports-sweatshirt1.png" alt="man-sports-sweatshirt1"
+                                        class="w-100 h-100 d-block rounded-2 img-fluid" />
+                                </div>
+                                <div class="swiper-slide bg-white rounded-2 p-1 p-sm-2">
+                                    <img src="./images/products/man-sports-sweatshirt1.png" alt="man-sports-sweatshirt1"
+                                        class="w-100 h-100 d-block rounded-2 img-fluid" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next text-theme bg-white rounded-pill"></div>
+                            <div class="swiper-button-prev text-theme bg-white rounded-pill"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Main Product Infos Section -->
+                <div class="col-12 col-lg-7 mt-5 mt-lg-0">
+
+                    <!-- Main Product Infos -->
+                    <div class="product-infos">
+                        <div class="row mx-1 mt-3">
+
+                            <!-- Title Product -->
+                            <div class="col-12">
+                                <h1 class="fs-4 f-lalezar title-product"> سویشرت ورزشی مردانه 1991 اس دبلیو مدل GK1920
+                                    NB
+                                </h1>
+                            </div>
+
+                            <!-- Availability of Main Product in Stock -->
+                            <div
+                                class="col-12 category-and-availability-stock align-items-center px-0 pb-3 pt-2 d-flex">
+
+                                <div class="availability-stock">
+
+                                    <!-- Availability in Stock -->
+                                    <span
+                                        class="text-success f-lalezar title-availability-stock rounded-1 pe-3 ps-1 py-1">
+                                        <i
+                                            class="bi bi-check2-circle title-availability-stock-icon d-inline-block fs-3 me-1"></i>
+                                        موجود در انبار
+                                    </span>
+
+                                    <!-- Not Availability in Stock -->
+                                    <!-- <span
+                                        class="text-danger f-lalezar title-not-availability-stock rounded-1 pe-3 ps-1 py-1">
+                                        <i
+                                            class="bi bi-x-circle title-not-availability-stock-icon d-inline-block fs-3 me-1"></i>
+                                        ناموجود
+                                    </span> -->
+                                </div>
+
+                                <!-- Category Name Main Product -->
+                                <div class="category-product w-max-content">
+                                    <span class="d-flex justify-content-center fs-7 category"> دسته بندی </span>
+                                    <span class="text-center title-category"> لوازم بزرگ ورزشی </span>
+                                </div>
+
+                            </div>
+
+                            <!-- Select Size and Color Main Product -->
+                            <div class="col-12 select-size-color align-items-center px-0 py-3 d-flex">
+
+                                <div class="row w-100 mx-0">
+                                    <div class="col-12 px-0 col-sm-6">
+
+                                        <!-- Select Color Main Product -->
+                                        <div class="select-color">
+                                            <label id="select-color-title"> رنگ : </label>
+
+                                            <div class="color border rounded-pill d-inline-block"
+                                                style="background-color: #ccc;"></div>
+                                            <div class="color border rounded-pill d-inline-block"
+                                                style="background-color: #ccc;"></div>
+                                            <div class="color border rounded-pill d-inline-block"
+                                                style="background-color: #ccc;"></div>
+                                            <div class="color selected-color border rounded-pill d-inline-block"
+                                                style="background-color: #ccc;"></div>
+                                            <div class="color border rounded-pill d-inline-block"
+                                                style="background-color: #ccc;"></div>
+                                            <div class="color border rounded-pill d-inline-block"
+                                                style="background-color: #ccc;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-0 d-flex col-sm-6 mt-4 mt-sm-0 justify-content-sm-end">
+
+                                        <!-- Select Size Main Product -->
+                                        <div class="w-max-content product-size d-flex align-items-center">
+                                            <span id="select-size-title"> سایز : </span>
+
+                                            <div class="select-size ms-2">
+                                                <select id="select-size" class="form-control">
+                                                    <option value="XL" class="text-center">XL</option>
+                                                    <option value="L" class="text-center">L</option>
+                                                    <option value="M" class="text-center">M</option>
+                                                    <option value="S" class="text-center">S</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- Six Propertys Main Product -->
+                            <div class="col-12 six-propertys-product py-3 px-0">
+                                <h5 class="fs-7 d-inline-block pb-2 text-theme"> ویژگی های کالا </h5>
+
+                                <!-- Six Propertys Main Product Container -->
+                                <div class="row mt-2">
+
+                                    <div class="col-6 col-sm-6 propertys-product-content mt-2 fs-7">
+                                        <span class="title-property-product">
+                                            جنس :
+                                        </span>
+                                        <span class="value-property-product d-inline-block">
+                                            پلاستیکی
+                                        </span>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 propertys-product-content mt-2 fs-7">
+                                        <span class="title-property-product">
+                                            جنس :
+                                        </span>
+                                        <span class="value-property-product d-inline-block">
+                                            پلاستیکی
+                                        </span>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 propertys-product-content mt-2 fs-7">
+                                        <span class="title-property-product">
+                                            جنس :
+                                        </span>
+                                        <span class="value-property-product d-inline-block">
+                                            پلاستیکی
+                                        </span>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 propertys-product-content mt-2 fs-7">
+                                        <span class="title-property-product">
+                                            جنس :
+                                        </span>
+                                        <span class="value-property-product d-inline-block">
+                                            پلاستیکی
+                                        </span>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 propertys-product-content mt-2 fs-7">
+                                        <span class="title-property-product">
+                                            جنس :
+                                        </span>
+                                        <span class="value-property-product d-inline-block">
+                                            پلاستیکی
+                                        </span>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 propertys-product-content mt-2 fs-7">
+                                        <span class="title-property-product">
+                                            جنس :
+                                        </span>
+                                        <span class="value-property-product d-inline-block">
+                                            پلاستیکی
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Price and Button Add to Cart Main Product -->
+                            <div class="col-12 price-btn-add-cart px-0 py-3">
+
+                                <div class="row align-items-center">
+
+                                    <div class="col-12 col-sm-7 order-1 order-sm-0 add-product-to-cart mt-3 mt-sm-0">
+                                        <button class="add-to-cart btn btn-primary w-100">
+                                            افزدون به سبد
+                                        </button>
+                                    </div>
+                                    <div class="col-12 col-sm-5 price-discount-content text-end d-grid f-lalezar">
+
+                                        <!-- Discount Main Product -->
+                                        <div class="discount">
+                                            <span class="value-discount text-danger fs-7">
+                                                120,000,000
+                                            </span>
+                                        </div>
+
+                                        <span class="price text-success">
+                                            120,000,000
+                                            <span class="color-dark">
+                                                تومان
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottombar-product-info">
+
+            <!-- Section Items -->
+            <ul class="nav nav-pills menu-bottombar mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+
+                <!-- Propertys Main Product -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link mx-0 px-2 px-sm-3 rounded-pill active" id="pills-home-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                        aria-controls="pills-home" aria-selected="true"> ویژگی ها </button>
+                </li>
+
+                <!-- Propertys Main Product -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link mx-0 px-2 px-sm-3 rounded-pill" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"> نظرات (99+) </button>
+                </li>
+
+                <!-- Question and Answer Main Product -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link mx-0 px-2 px-sm-3 rounded-pill" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false"> پرسش و پاسخ ها (99+) </button>
+                </li>
+            </ul>
+
+            <!-- Menu Items -->
+            <div class="tab-content mt-4" id="pills-tabContent">
+
+                <!-- Tab Propertys Main Product -->
+                <div class="tab-pane border bg-light b-radius-m p-3 propertys-content fade show active" id="pills-home"
+                    role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                    <!-- Title Section -->
+                    <h3 class="fs-4 mb-5 title-section-bottombar mx-2">
+                        ویژگی های کالا
+                    </h3>
+
+                    <!-- Property Conainer -->
+                    <div class="row align-items-center mt-4 mx-2">
+                        <div class="col-12 col-sm-3 mt-2">
+                            <div class="p-1 px-2 rounded-3 lh-sm">
+                                <p class="title-property d-block text-theme">
+                                    جنس
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8 offset-sm-1 mb-3 mb-sm-0 mt-0 mt-sm-2">
+                            <div class="bg-white p-1 px-2 lh-sm rounded-3">
+                                <span class="value-property">
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                    پلاستیکی
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-3 mt-2">
+                            <div class="p-1 px-2 rounded-3 lh-sm">
+                                <p class="title-property d-block text-theme">
+                                    جنس
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8 offset-sm-1 mb-3 mb-sm-0 mt-0 mt-sm-2">
+                            <div class="bg-white p-1 px-2 lh-sm rounded-3">
+                                <span class="value-property">
+                                    پلاستیکی
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-3 mt-2">
+                            <div class="p-1 px-2 rounded-3 lh-sm">
+                                <p class="title-property d-block text-theme">
+                                    جنس
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8 offset-sm-1 mb-3 mb-sm-0 mt-0 mt-sm-2">
+                            <div class="bg-white p-1 px-2 lh-sm rounded-3">
+                                <span class="value-property">
+                                    پلاستیکی
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 mt-2">
+                            <div class="p-1 px-2 rounded-3 lh-sm">
+                                <p class="title-property d-block text-theme">
+                                    جنس
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8 offset-sm-1 mb-3 mb-sm-0 mt-0 mt-sm-2">
+                            <div class="bg-white p-1 px-2 lh-sm rounded-3">
+                                <span class="value-property">
+                                    پلاستیکی
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 mt-2">
+                            <div class="p-1 px-2 rounded-3 lh-sm">
+                                <p class="title-property d-block text-theme">
+                                    جنس
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8 offset-sm-1 mb-3 mb-sm-0 mt-0 mt-sm-2">
+                            <div class="bg-white p-1 px-2 lh-sm rounded-3">
+                                <span class="value-property">
+                                    پلاستیکی
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 mt-2">
+                            <div class="p-1 px-2 rounded-3 lh-sm">
+                                <p class="title-property d-block text-theme">
+                                    جنس
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8 offset-sm-1 mb-3 mb-sm-0 mt-0 mt-sm-2">
+                            <div class="bg-white p-1 px-2 lh-sm rounded-3">
+                                <span class="value-property">
+                                    پلاستیکی
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Comments Main Product -->
+                <div class="tab-pane border bg-light b-radius-m p-3 comments-content fade" id="pills-profile"
+                    role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <!-- Add New Comment -->
+                    <div class="new-comment">
+                        <div class="container-fluid">
+                            <div class="card my-2">
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <label for="my-socre"> امتیاز دهید : </label>
+
+                                        <select name="score-product" id="my-socre"
+                                            class="form-control d-inline-block w-max-content mb-3">
+                                            <option value="0" selected="">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+
+                                        <div class="buy-state-user ms-2 ms-md-4 d-inline-block">
+
+                                            <label for="buy-state"> توصیه شما : </label>
+
+                                            <select name="buy-state" id="buy-state" class="form-control w-max-content">
+                                                <option value="نمیدانم" selected=""> نمیدانم </option>
+                                                <option value="پیشنهاد میکنم"> پیشنهاد میکنم </option>
+                                                <option value="پیشنهاد نمیکنم"> پیشنهاد نمیکنم </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="comment-input" class="form-label"> متن دیدگاه شما </label>
+                                        <textarea class="form-control" placeholder="دیدگاه خود را بنویسید..."
+                                            id="comment-input" rows="4"></textarea>
+                                    </div>
+                                    <div class="btn-add-comment">
+                                        <button class="btn btn-primary btn-add-comment f-lalezar" data-bs-toggle="modal"
+                                            data-bs-target="#comment-modal"> ثبت
+                                            دیدگاه </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment Users Container -->
+                    <div class="comments mt-5 pt-5">
+                        <h4 class="text-center title-section-bottombar">
+                            نظر کاربران
+                        </h4>
+
+                        <div class="container-comments mt-4">
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <span class="user-name-comment text-theme f-lalezar">
+                                        هادی حیدری آذر
+                                    </span>
+                                    <p class="state text-danger d-sm-inline-block fw-blod mt-2 mt-sm-0 ms-0 ms-sm-5">
+                                        پیشنهاد نمیکنم
+                                    </p>
+
+                                    <div class="w-100"></div>
+
+                                    <span class="color-dark user-score fs-5 f-lalezar fw-300">
+
+                                        <img src="./images/icons/star.png" alt="star" class="img-fluid score-photo">
+
+                                        4
+                                    </span>
+
+                                    <span class="comment-created-date f-lalezar text-secondary ms-3">
+                                        1402/02/09
+                                    </span>
+
+                                    <button class="btn btn-primary btn-reply-comment ms-2 f-lalezar"
+                                        data-bs-toggle="modal" data-bs-target="#reply-comment-modal">پاسخ
+                                    </button>
+
+                                    <div class="comment-content lh-sm mt-3">
+                                        <p class="text-comment">
+                                            سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که میتوانید
+                                            خیلی راحت محصول خود را یافته و آن را سفارش بدید و از آن استفاده کنید
+                                            تمام چیز هایی ورزشی که میخواهید میتوانید در این سایت پیدا کنید ما در
+                                            لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم از شما رضایت
+                                            100 در صدی داشته باشیم ما در لایف اسپرت این تضمین رو میدیم که خیلی راحت
+                                            انتخاب کنید چون ما به شما مشاوره رایگان و تحویل محصول درب منزل و مرجوع
+                                            کردن کالا رو میدیم تا شما مشتری عزیز با خیال راحت و آسوده محصول مورد نظر
+                                            خود را سفارش دهید
+                                        </p>
+                                        <div class="reply-to-comment">
+                                            <div class="reply-to-comment-content mt-5">
+                                                <span class="user-name-reply-comment text-theme ms-4 ms-sm-5 f-lalezar">
+                                                    کاربر لایف اسپرت
+                                                </span>
+
+                                                <div class="reply-comment-content mx-4 mx-sm-5 mt-2">
+                                                    <p class="text-reply-comment">
+                                                        سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که
+                                                        میتوانید
+                                                        خیلی راحت محصول خود را یافته و آن را سفارش بدید و از آن استفاده
+                                                        کنید
+                                                        تمام چیز هایی ورزشی که میخواهید میتوانید در این سایت پیدا کنید
+                                                        ما در
+                                                        لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم از
+                                                        شما
+                                                        رضایت
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <span class="user-name-comment text-theme f-lalezar">
+                                        کاربر لایف اسپرت
+                                    </span>
+                                    <p class="state text-danger d-sm-inline-block fw-blod mt-2 mt-sm-0 ms-0 ms-sm-5">
+                                        پیشنهاد نمیکنم
+                                    </p>
+
+                                    <div class="w-100"></div>
+
+                                    <span class="color-dark user-score fs-5 f-lalezar fw-300">
+
+                                        <img src="./images/icons/star.png" alt="star" class="img-fluid score-photo">
+
+                                        4
+                                    </span>
+
+                                    <span class="comment-created-date f-lalezar text-secondary ms-3">
+                                        1402/02/09
+                                    </span>
+
+                                    <button class="btn btn-primary btn-reply-comment ms-2 f-lalezar"
+                                        data-bs-toggle="modal" data-bs-target="#reply-comment-modal">پاسخ
+                                    </button>
+
+                                    <div class="comment-content lh-sm mt-3">
+                                        <p class="text-comment">
+                                            سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که میتوانید
+                                            خیلی راحت محصول خود را یافته و آن را سفارش بدید و از آن استفاده کنید
+                                            تمام چیز هایی ورزشی که میخواهید میتوانید در این سایت پیدا کنید ما در
+                                            لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم از شما رضایت
+                                            100 در صدی داشته باشیم ما در لایف اسپرت این تضمین رو میدیم که خیلی راحت
+                                            انتخاب کنید چون ما به شما مشاوره رایگان و تحویل محصول درب منزل و مرجوع
+                                            کردن کالا رو میدیم تا شما مشتری عزیز با خیال راحت و آسوده محصول مورد نظر
+                                            خود را سفارش دهید
+                                        </p>
+
+                                        <!-- Replyed To Comment -->
+                                        <div class="reply-to-comment"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-comments text-center">
+                        <button class="btn btn-primary rounded-pill f-lalezar btn-all-comments text-center">
+                            نظرات بیشتر
+
+                            <i class="bi bi-eye-slash-fill ms-2"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Tab Question and Answer Main product -->
+                <div class="tab-pane border bg-light b-radius-m p-3 question-answer-content fade" id="pills-contact"
+                    role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                    <!-- Add New Question -->
+                    <div class="new-question">
+                        <div class="container-fluid">
+                            <div class="card my-2">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label for="question-input" class="form-label"> متن پرسش شما </label>
+                                        <textarea class="form-control" placeholder="پرسش خود را بنویسید..."
+                                            id="question-input" rows="4"></textarea>
+                                    </div>
+                                    <div class="btn-add-question">
+                                        <button class="btn btn-primary btn-add-question f-lalezar"
+                                            data-bs-toggle="modal" data-bs-target="#question-modal"> ثبت
+                                            پرسش </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question Users Container -->
+                    <div class="questions mt-5 pt-5">
+                        <h4 class="text-center title-section-bottombar">
+                            پرسش کاربران
+                        </h4>
+
+                        <div class="container-questions mt-4">
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <span class="user-name-question text-theme f-lalezar">
+                                        هادی حیدری آذر
+                                    </span>
+
+                                    <div class="w-100"></div>
+
+                                    <span class="question-created-date f-lalezar text-secondary">
+                                        1402/02/09
+                                    </span>
+
+                                    <button class="btn btn-primary btn-reply-question ms-2 f-lalezar"
+                                        data-bs-toggle="modal" data-bs-target="#reply-question-modal">پاسخ
+                                    </button>
+
+                                    <div class="question-content lh-sm mt-3">
+                                        <p class="text-question">
+                                            سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که میتوانید
+                                            خیلی راحت محصول خود را یافته و آن را سفارش بدید و از آن استفاده کنید
+                                            تمام چیز هایی ورزشی که میخواهید میتوانید در این سایت پیدا کنید ما در
+                                            لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم از شما رضایت
+                                            100 در صدی داشته باشیم ما در لایف اسپرت این تضمین رو میدیم که خیلی راحت
+                                            انتخاب کنید چون ما به شما مشاوره رایگان و تحویل محصول درب منزل و مرجوع
+                                            کردن کالا رو میدیم تا شما مشتری عزیز با خیال راحت و آسوده محصول مورد نظر
+                                            خود را سفارش دهید
+                                        </p>
+                                        <div class="reply-to-question">
+                                            <div class="reply-to-question-content mt-5">
+                                                <span
+                                                    class="user-name-reply-question text-theme ms-4 ms-sm-5 f-lalezar">
+                                                    کاربر لایف اسپرت
+                                                </span>
+
+                                                <div class="reply-question-content mx-4 mx-sm-5 mt-2">
+                                                    <p class="text-reply-question">
+                                                        سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که
+                                                        میتوانید
+                                                        خیلی راحت محصول خود را یافته و آن را سفارش بدید و از آن استفاده
+                                                        کنید
+                                                        تمام چیز هایی ورزشی که میخواهید میتوانید در این سایت پیدا کنید
+                                                        ما در
+                                                        لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم از
+                                                        شما
+                                                        رضایت
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <span class="user-name-question text-theme f-lalezar">
+                                        کاربر لایف اسپرت
+                                    </span>
+
+                                    <div class="w-100"></div>
+
+                                    <span class="question-created-date f-lalezar text-secondary">
+                                        1402/02/09
+                                    </span>
+
+                                    <button class="btn btn-primary btn-reply-question ms-2 f-lalezar"
+                                        data-bs-toggle="modal" data-bs-target="#reply-question-modal">پاسخ
+                                    </button>
+
+                                    <div class="question-content lh-sm mt-3">
+                                        <p class="text-question">
+                                            سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که میتوانید
+                                            خیلی راحت محصول خود را یافته و آن را سفارش بدید و از آن استفاده کنید
+                                            تمام چیز هایی ورزشی که میخواهید میتوانید در این سایت پیدا کنید ما در
+                                            لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم از شما رضایت
+                                            100 در صدی داشته باشیم ما در لایف اسپرت این تضمین رو میدیم که خیلی راحت
+                                            انتخاب کنید چون ما به شما مشاوره رایگان و تحویل محصول درب منزل و مرجوع
+                                            کردن کالا رو میدیم تا شما مشتری عزیز با خیال راحت و آسوده محصول مورد نظر
+                                            خود را سفارش دهید
+                                        </p>
+
+                                        <!-- Replyed To Question -->
+                                        <div class="reply-to-question"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-questions text-center">
+                        <button class="btn btn-primary rounded-pill f-lalezar btn-all-questions text-center">
+                            پرسش های بیشتر
+
+                            <i class="bi bi-eye-slash-fill ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Related Products Slider -->
+        <section class="related-products">
+            <div class="related-products-content">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- TopBar Slider Related Products -->
+                        <div class="top-side b-radius-l w-100">
+                            <div class="row w-100">
+
+                                <div class="col-7 d-flex align-items-center">
+
+                                    <h5 class="title-related-product">
+                                        کالاهای
+                                        <br>
+                                        <span class="f-lalezar fs-4 mt-1 d-flex">
+                                            مرتبط
+                                        </span>
+                                    </h5>
+                                </div>
+
+                                <div class="col-5 px-0 d-flex mt-2 mt-sm-0 justify-content-end align-items-center">
+
+                                    <a href="./shop.html?category=ورزشی مردانه"
+                                        class="btn h-max-content btn-all-related-products b-radius-l fs-7 px-3">
+                                        مشاهده همه
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-5 mt-4">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper related-product-slider">
+
+                                <!-- Slider Items -->
+                                <div class="swiper-slide">
+                                    <div class="card position-relative">
+
+                                        <span class="position-absolute top-0 end-0 badge value-discount-off px-2 py-1 bg-danger fs-6 f-lalezar fw-300">
+                                            50%
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+
+                                        <div class="product-img p-2 pb-0">
+                                            <a href="./product-info.html">
+                                                <img src="./images/products/man-sports-sweatshirt1.png"
+                                                    class="card-img-top" alt="man-sports-sweatshirt1">
+                                            </a>
+
+                                        </div>
+                                        <div class="card-body py-1">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="product-title">
+                                                        <a href="./product-info.html"
+                                                            class="card-title color-dark text-decoration-none">
+                                                            سویشرت ورزشی مردانه کد ADblM39
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="product-discount">
+                                                                <p
+                                                                    class="discount text-danger f-lalezar text-decoration-line-through">
+                                                                    120,000,000
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="product-price">
+                                                                <p class="f-lalezar text-success price">
+                                                                    120,000,000
+                                                                    <span class="color-dark"> تومان </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="product-img p-2 pb-0">
+                                            <a href="./product-info.html">
+                                                <img src="./images/products/man-sports-sweatshirt1.png"
+                                                    class="card-img-top" alt="man-sports-sweatshirt1">
+                                            </a>
+
+                                        </div>
+                                        <div class="card-body py-1">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="product-title">
+                                                        <a href="./product-info.html"
+                                                            class="card-title color-dark text-decoration-none">
+                                                            لباس ورزشی مردانه طرح تیم پاریس سن ژرمن
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="product-discount">
+                                                                <p
+                                                                    class="discount text-danger f-lalezar text-decoration-line-through">
+                                                                    120,000,000
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="product-price">
+                                                                <p class="f-lalezar text-success price">
+                                                                    120,000,000
+                                                                    <span class="color-dark"> تومان </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="product-img p-2 pb-0">
+                                            <a href="./product-info.html">
+                                                <img src="./images/products/man-sports-sweatshirt1.png"
+                                                    class="card-img-top" alt="man-sports-sweatshirt1">
+                                            </a>
+
+                                        </div>
+                                        <div class="card-body py-1">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="product-title">
+                                                        <a href="./product-info.html"
+                                                            class="card-title color-dark text-decoration-none">
+                                                            سویشرت ورزشی مردانه
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="product-discount">
+                                                                <p
+                                                                    class="discount text-danger f-lalezar text-decoration-line-through">
+                                                                    120,000,000
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="product-price">
+                                                                <p class="f-lalezar text-success price">
+                                                                    120,000,000
+                                                                    <span class="color-dark"> تومان </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="product-img p-2 pb-0">
+                                            <a href="./product-info.html">
+                                                <img src="./images/products/man-sports-sweatshirt1.png"
+                                                    class="card-img-top" alt="man-sports-sweatshirt1">
+                                            </a>
+
+                                        </div>
+                                        <div class="card-body py-1">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="product-title">
+                                                        <a href="./product-info.html"
+                                                            class="card-title color-dark text-decoration-none">
+                                                            سویشرت ورزشی مردانه
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="product-discount">
+                                                                <p
+                                                                    class="discount text-danger f-lalezar text-decoration-line-through">
+                                                                    120,000,000
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="product-price">
+                                                                <p class="f-lalezar text-success price">
+                                                                    120,000,000
+                                                                    <span class="color-dark"> تومان </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="product-img p-2 pb-0">
+                                            <a href="./product-info.html">
+                                                <img src="./images/products/man-sports-sweatshirt1.png"
+                                                    class="card-img-top" alt="man-sports-sweatshirt1">
+                                            </a>
+
+                                        </div>
+                                        <div class="card-body py-1">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="product-title">
+                                                        <a href="./product-info.html"
+                                                            class="card-title color-dark text-decoration-none">
+                                                            سویشرت ورزشی مردانه
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="product-discount">
+                                                                <p
+                                                                    class="discount text-danger f-lalezar text-decoration-line-through">
+                                                                    120,000,000
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="product-price">
+                                                                <p class="f-lalezar text-success price">
+                                                                    120,000,000
+                                                                    <span class="color-dark"> تومان </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="product-img p-2 pb-0">
+                                            <a href="./product-info.html">
+                                                <img src="./images/products/man-sports-sweatshirt1.png"
+                                                    class="card-img-top" alt="man-sports-sweatshirt1">
+                                            </a>
+
+                                        </div>
+                                        <div class="card-body py-1">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="product-title">
+                                                        <a href="./product-info.html"
+                                                            class="card-title color-dark text-decoration-none">
+                                                            سویشرت ورزشی مردانه
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="product-discount">
+                                                                <p
+                                                                    class="discount text-danger f-lalezar text-decoration-line-through">
+                                                                    120,000,000
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="product-price">
+                                                                <p class="f-lalezar text-success price">
+                                                                    120,000,000
+                                                                    <span class="color-dark"> تومان </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Btns navigation Slider -->
+                            <div class="swiper-button-next btn-next-related-product-slider rounded-pill text-white bg-theme">
+                            </div>
+
+                            <div class="swiper-button-prev btn-prev-related-product-slider rounded-pill text-white bg-theme">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer class="mt-5">
+        <section class="section-one px-3 text-white">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h3 class="f-lalezar"> لایف اسپرت </h3>
+                    <p class="mt-4">
+                        سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که میتوانید خیلی
+                        راحت محصول خود را یافته و آن را سفارش بدید و از آن استفاده کنید تمام چیز هایی ورزشی که میخواهید
+                        میتوانید در این سایت پیدا کنید ما در لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم
+                        از شما رضایت 100 در صدی داشته باشیم ما در لایف اسپرت این تضمین رو میدیم که خیلی راحت انتخاب کنید
+                        چون ما به شما مشاوره رایگان و تحویل محصول درب منزل و مرجوع کردن کالا رو میدیم تا شما مشتری عزیز
+                        با خیال راحت و آسوده محصول مورد نظر خود را سفارش دهید
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 text-start">
+                    <div class="row mt-5 mt-lg-0">
+                        <div class="col-6 col-sm-4">
+                            <h5 class="text-theme mb-4 title-item-footer"> دسترسی سریع </h5>
+                            <ul class="text-start p-lg-0">
+                                <li class="mb-3">
+                                    <a href="./shop.html" class="text-decoration-none text-white fs-7"> فروشگاه </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="./index.html#special-institutions" class="text-decoration-none text-white fs-7">
+                                        پیشنهادات </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="./about-us.html#contact-us-scroll"
+                                        class="text-decoration-none text-white fs-7" id="contact-us"> ارتباط با ما
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./about-us.html" class="text-decoration-none text-white fs-7"> درباره ما
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <h5 class="text-theme mb-4 title-item-footer"> با لایف اسپرت </h5>
+                            <ul class="text-start">
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> ضمانت کالا
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> تحویل درب
+                                        منزل </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> تخفیفات
+                                        ویژه </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> امکان
+                                        مرجوع کالا </a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none text-white fs-7" style="cursor: default;"> پشتیبانی
+                                        24 ساعته </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <h5 class="text-theme mb-4 title-item-footer"> ارتباط با ما </h5>
+                            <ul class="text-start">
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-white fs-7"> اینستاگرام </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-white fs-7"> تلگرام </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-white fs-7"> ایمیل </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-white fs-7"> شماره تماس </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-two">
+            <div class="px-3 d-grid justify-content-center">
+                <img src="./images/gallery-items/gallery-item6.png" alt="gallery-item6" class="footer-image img-fluid">
+            </div>
+
+            <div class="caption-footer-img text-center mb-4">
+                <span class="f-lalezar fs-5"> ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم </span>
+            </div>
+
+            <div class="text-center mb-4">
+                <img src="./images/icons/namad.png" alt="namad">
+            </div>
+
+            <div class="text-center mb-2">
+                <span>
+                    تمام حقوق برای لایف اسپرت محفوظ است
+                </span>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/productInfo.js" type="module"></script>
+    <script src="./js/features/loader.js"></script>
+    <script src="./js/features/createSwiper.js" type="module"></script>
+
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+    </script>
+</body>
+
+</html>

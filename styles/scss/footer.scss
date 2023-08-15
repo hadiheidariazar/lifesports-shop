@@ -1,0 +1,37 @@
+.section-one {
+    background-image: url('./../../images/gallery-items/bg-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #111;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    @include responsivePage(XS) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .title-item-footer {
+        margin-right: -20px;
+    }
+
+    .title-item-footer:nth-child(1) {
+        @include responsivePage(L) {
+            margin-right: 20px;
+        }
+
+    }
+
+    li {
+        list-style-type: disc;
+        color: $theme-color;
+    }
+}
+
+.footer-image {
+    margin-top: -140px;
+
+    @include responsivePage(XS) {
+        margin-top: -100px;
+    }
+}

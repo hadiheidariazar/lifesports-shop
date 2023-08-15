@@ -1,0 +1,138 @@
+@import "header";
+@import "footer";
+@import "spinner";
+
+.navbar {
+    transform: none !important;
+    visibility: visible !important;
+    background-color: inherit;
+    border: none !important;
+}
+
+.active,
+.navbar-item:hover,
+.offcanvas-item:hover {
+    background-color: $theme-color !important;
+}
+
+.navbar-item,
+.offcanvas-item {
+    background-color: #696969;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.my-profile-image {
+    width: 3.5rem;
+}
+
+.section {
+    box-shadow: 0px 39px 99px #0000000d;
+}
+
+.section-wrapper {
+    height: 100vh;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+
+    @include responsivePage(L) {
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+
+    .logout {
+        cursor: pointer;
+    }
+
+    i {
+        transition: .25s;
+
+        &:hover {
+            color: #fff !important;
+            background-color: $secondary-500 !important;
+        }
+    }
+
+    .panel-header-info {
+        width: 28rem;
+        overflow-x: hidden;
+
+        @include responsivePage(L) {
+            width: 29rem;
+        }
+
+        .wellcome {
+            border-left: 1px solid $secondary-500;
+        }
+
+        .date {
+            font-size: .7rem;
+        }
+
+        .panel-open-nav {
+            border: none;
+
+            i {
+                display: contents !important;
+            }
+        }
+    }
+
+    .title {
+        word-spacing: -2px;
+        font-size: .7rem;
+    }
+
+    .value {
+        font-size: .8rem;
+    }
+
+    .panel-full-info-item:hover i {
+        background-color: $theme-color !important;
+    }
+
+    .icon i {
+        transition: .3s;
+        margin-top: .8rem;
+        margin-bottom: .8rem;
+        border-radius: 70px 40px 40px 40px;
+    }
+}
+
+.offcanvas {
+    @include responsivePage(S) {
+        width: 14rem !important;
+    }
+}
+
+.container-user-info-footer {
+    overflow: hidden !important;
+    height: 100px !important;
+}
+
+.container-user-info {
+
+    .panel-open-nav {
+        border: none;
+
+        i {
+            display: contents;
+        }
+    }
+}
+
+.footer-text {
+    margin-top: 8rem;
+
+    @include responsivePage(L) {
+        margin-top: 5rem;
+    }
+
+    @include responsivePage(M) {
+        margin-top: 2.5rem;
+    }
+
+    p {
+        word-spacing: -2px;
+    }
+}

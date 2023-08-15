@@ -1,0 +1,88 @@
+@import "variables";
+@import "mixins";
+
+@font-face {
+    font-family: lalezar;
+    src: url('./../fonts/Lalezar-Regular.ttf');
+}
+
+@font-face {
+    font-family: iranYekan;
+    src: url('./../fonts/IRANYekanRegular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: iranYekan;
+    color: $dark-color;
+    overflow-x: hidden;
+}
+
+.bg-theme {
+    background-color: $theme-color;
+}
+
+.bg-secondary-500 {
+    background-color: $secondary-500;
+}
+
+.bg-secondary-400 {
+    background-color: $secondary-400;
+}
+
+.text-theme {
+    color: $theme-color;
+}
+
+.color-dark {
+    color: $dark-color;
+}
+
+.bg-dark-color {
+    background-color: $dark-color;
+}
+
+.circle {
+    clip-path: circle();
+}
+
+.b-radius-l {
+    border-radius: 4rem;
+}
+
+.b-radius-m {
+    border-radius: 2rem;
+}
+
+.b-radius-s {
+    border-radius: 1rem;
+}
+
+.f-lalezar {
+    font-family: lalezar;
+}
+
+.fs-7 {
+    font-size: .9rem;
+}
+
+.fw-bold {
+    font-weight: bolder;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.w-max-content {
+    width: max-content;
+}
+
+.h-max-content {
+    height: max-content;
+}

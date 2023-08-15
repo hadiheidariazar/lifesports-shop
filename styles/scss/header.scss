@@ -1,0 +1,133 @@
+@import "custom";
+
+html::-webkit-scrollbar {
+    background-color: #fff;
+    width: .6rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: $theme-color;
+    border-radius: 1rem;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.lifesports {
+    width: 13rem;
+}
+
+.search-product {
+    width: 30rem;
+
+    .search-product-input {
+        padding: 8px 1rem 12px 4rem;
+        border: 2px solid $secondary-500;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color: $secondary-500;
+        }
+
+    }
+
+    @include responsivePage(S) {
+        width: 25rem;
+    }
+
+    .btn-search {
+        background-color: $secondary-500;
+        border: none;
+        left: 0;
+        -moz-transform: translateY(2px);
+    }
+}
+
+.btn-login-register-user {
+    border: 1px solid $secondary-500;
+    transition: .25s;
+
+    &:hover {
+        background-color: $dark-color !important;
+        color: $white-color;
+    }
+}
+
+.collapse {
+
+    .nav-item {
+        transition: .25s;
+
+        &:hover {
+            background-color: $dark-color;
+        }
+
+        .nav-link {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
+}
+
+.offcanvas {
+
+    .btn-close-navbar:hover {
+        background: $theme-color;
+    }
+
+}
+
+.cart-icon {
+    background-color: #49be78;
+}
+
+.count-cart {
+    transform: translate(10px, -5px);
+    background-color: $dark-color;
+}
+
+.btn-navbar-toggle {
+
+    .btn-navbar-toggle-item {
+        width: 2.5rem;
+        height: .37rem;
+
+        @include responsivePage(S) {
+            width: 2rem;
+        }
+    }
+}
+
+.offcanvas {
+    width: 20rem !important;
+
+    @include responsivePage(S) {
+        width: 16rem !important;
+    }
+
+    .btn-close:focus {
+        box-shadow: none;
+    }
+}
+
+.dropdown-menu {
+    & {
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    li a {
+        transition: .25s;
+        padding: .7rem 1rem !important;
+    }
+
+    li a:hover,
+    li a:focus {
+        background-color: $theme-color !important;
+        color: #fff !important;
+    }
+}

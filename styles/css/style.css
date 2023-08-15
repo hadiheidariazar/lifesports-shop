@@ -1,0 +1,552 @@
+@font-face {
+  font-family: lalezar;
+  src: url("./../fonts/Lalezar-Regular.ttf");
+}
+@font-face {
+  font-family: iranYekan;
+  src: url("./../fonts/IRANYekanRegular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: iranYekan;
+  color: #2d365d;
+  overflow-x: hidden;
+}
+
+.bg-theme {
+  background-color: #05f;
+}
+
+.bg-secondary-500 {
+  background-color: #797e86;
+}
+
+.bg-secondary-400 {
+  background-color: #b3bbc7;
+}
+
+.text-theme {
+  color: #05f;
+}
+
+.color-dark {
+  color: #2d365d;
+}
+
+.bg-dark-color {
+  background-color: #2d365d;
+}
+
+.circle {
+  clip-path: circle();
+}
+
+.b-radius-l {
+  border-radius: 4rem;
+}
+
+.b-radius-m {
+  border-radius: 2rem;
+}
+
+.b-radius-s {
+  border-radius: 1rem;
+}
+
+.f-lalezar {
+  font-family: lalezar;
+}
+
+.fs-7 {
+  font-size: 0.9rem;
+}
+
+.fw-bold {
+  font-weight: bolder;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.w-max-content {
+  width: max-content;
+}
+
+.h-max-content {
+  height: max-content;
+}
+
+html::-webkit-scrollbar {
+  background-color: #fff;
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #05f;
+  border-radius: 1rem;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.lifesports {
+  width: 13rem;
+}
+
+.search-product {
+  width: 30rem;
+}
+.search-product .search-product-input {
+  padding: 8px 1rem 12px 4rem;
+  border: 2px solid #797e86;
+}
+.search-product .search-product-input:focus {
+  box-shadow: none;
+}
+.search-product .search-product-input::placeholder {
+  color: #797e86;
+}
+@media screen and (max-width: 576px) {
+  .search-product {
+    width: 25rem;
+  }
+}
+.search-product .btn-search {
+  background-color: #797e86;
+  border: none;
+  left: 0;
+  -moz-transform: translateY(2px);
+}
+
+.btn-login-register-user {
+  border: 1px solid #797e86;
+  transition: 0.25s;
+}
+.btn-login-register-user:hover {
+  background-color: #2d365d !important;
+  color: #fff;
+}
+
+.collapse .nav-item {
+  transition: 0.25s;
+}
+.collapse .nav-item:hover {
+  background-color: #2d365d;
+}
+.collapse .nav-item .nav-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.offcanvas .btn-close-navbar:hover {
+  background: #05f;
+}
+
+.cart-icon {
+  background-color: #49be78;
+}
+
+.count-cart {
+  transform: translate(10px, -5px);
+  background-color: #2d365d;
+}
+
+.btn-navbar-toggle .btn-navbar-toggle-item {
+  width: 2.5rem;
+  height: 0.37rem;
+}
+@media screen and (max-width: 576px) {
+  .btn-navbar-toggle .btn-navbar-toggle-item {
+    width: 2rem;
+  }
+}
+
+.offcanvas {
+  width: 20rem !important;
+}
+@media screen and (max-width: 576px) {
+  .offcanvas {
+    width: 16rem !important;
+  }
+}
+.offcanvas .btn-close:focus {
+  box-shadow: none;
+}
+
+.dropdown-menu {
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.dropdown-menu li a {
+  transition: 0.25s;
+  padding: 0.7rem 1rem !important;
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+  background-color: #05f !important;
+  color: #fff !important;
+}
+
+.section-one {
+  background-image: url("./../../images/gallery-items/bg-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #111;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media screen and (max-width: 400px) {
+  .section-one {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+.section-one .title-item-footer {
+  margin-right: -20px;
+}
+@media screen and (max-width: 991px) {
+  .section-one .title-item-footer:nth-child(1) {
+    margin-right: 20px;
+  }
+}
+.section-one li {
+  list-style-type: disc;
+  color: #05f;
+}
+
+.footer-image {
+  margin-top: -140px;
+}
+@media screen and (max-width: 400px) {
+  .footer-image {
+    margin-top: -100px;
+  }
+}
+
+.loader {
+  height: 100vh;
+  z-index: 99999999999;
+  position: fixed;
+  top: 0;
+}
+.loader .custom-loader {
+  width: 50px;
+  height: 50px;
+  display: grid;
+}
+.loader .custom-loader::before, .loader .custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  --c: radial-gradient(farthest-side, #05f, 92%, #0000);
+  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%, var(--c) 0 50%;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  animation: s2 1s infinite;
+}
+.loader .custom-loader::before {
+  margin: 4px;
+  filter: hue-rotate(45deg);
+  background-size: 8px 8px;
+  animation-timing-function: linear;
+}
+
+.hidden-loader {
+  display: none !important;
+}
+
+@keyframes s2 {
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+.container {
+  margin-top: 9.5rem;
+}
+
+.product-title {
+  height: 4rem;
+  overflow-y: hidden;
+}
+.product-title .card-title {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  display: block;
+}
+.product-title .card-title:hover {
+  color: #05f;
+}
+@media screen and (max-width: 767px) {
+  .product-title .card-title {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+}
+
+.product-discount {
+  height: 1.5rem;
+}
+.product-discount .discount {
+  font-size: 0.9rem;
+  line-height: 12px;
+}
+
+.product-price {
+  height: 1.8rem;
+}
+.product-price .price {
+  font-size: 1rem;
+  line-height: 13px;
+}
+
+.value-discount-off {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0;
+}
+
+/* Start First Slider Section */
+.first-slider {
+  user-select: none;
+}
+.first-slider .swiper-slide img {
+  object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .first-slider .swiper-button-next {
+    transform: scale(0.5);
+    margin: -75px 0px 0 -130px;
+    border: 2px solid #fff;
+    padding: 2.5rem;
+    color: #fff;
+    border-radius: 5rem;
+    top: 100%;
+    left: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .first-slider .swiper-button-next {
+    transform: scale(0.4);
+    margin: -67px 0px 0 -120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .first-slider .swiper-button-prev {
+    transform: scale(0.5);
+    margin: -75px -10px 0 0;
+    border: 2px solid #fff;
+    padding: 2.5rem;
+    color: #fff;
+    border-radius: 5rem;
+    top: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .first-slider .swiper-button-prev {
+    transform: scale(0.4);
+    margin: -67px -15px 0 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .first-slider .swiper-pagination {
+    margin-bottom: -7px;
+  }
+}
+
+/* Finish First Slider Section */
+/* Start Category Products Section */
+.category-products-card {
+  border: 1px solid #797e86;
+  user-select: none;
+  transition: 0.25s;
+}
+.category-products-card:hover {
+  filter: brightness(65%);
+}
+.category-products-card img {
+  width: 6rem;
+}
+.category-products-card .title-category {
+  height: 3rem;
+}
+.category-products-card .all-category {
+  font-size: 3.5rem;
+}
+
+/* Finish Category Products Section */
+/* Start Special institutions Section */
+.section-special-institutions {
+  margin-top: 8rem;
+}
+.section-special-institutions .special-institutions {
+  height: max-content;
+}
+.section-special-institutions .special-institutions .special-institutions-swiper {
+  width: 100%;
+  height: 100%;
+}
+.section-special-institutions .special-institutions .special-institutions-swiper .swiper-slide .card {
+  width: 100%;
+  height: 100%;
+}
+.section-special-institutions .special-institutions .btn-next-second-slider {
+  transform: scale(0.4) !important;
+  margin: -0.8rem -135px 0px 0px;
+  border: 1px solid #fff;
+}
+.section-special-institutions .special-institutions .btn-prev-second-slider {
+  transform: scale(0.4) !important;
+  margin: -0.8rem -90px 0px 0px;
+  border: 1px solid #fff;
+}
+.section-special-institutions .special-institutions .title-special-institutions {
+  width: 83%;
+  height: 23rem;
+  background-image: url("./../../images/slider-items/bg-ronaldo.png");
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1199px) {
+  .section-special-institutions .special-institutions .title-special-institutions {
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section-special-institutions .special-institutions .title-special-institutions {
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-special-institutions .special-institutions .title-special-institutions {
+    height: 18.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-special-institutions .special-institutions .title-special-institutions {
+    width: 18rem;
+  }
+}
+.section-special-institutions .special-institutions .title-special-institutions img {
+  transform: translate(-60px, 15px);
+}
+@media screen and (max-width: 991px) {
+  .section-special-institutions .special-institutions .title-special-institutions img {
+    transform: translate(-50px, 70px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-special-institutions .special-institutions .title-special-institutions img {
+    transform: translate(-30px, 70px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-special-institutions .special-institutions .title-special-institutions img {
+    transform: translate(-50px, -20px);
+  }
+}
+.section-special-institutions .special-institutions .title-special-institutions h4 {
+  transform: translate(-15px, 50px);
+}
+
+/* Finish Special institutions Section */
+/* Start The best selling women's and man's sportswear Section */
+.section-best-sellers-women,
+.section-best-sellers-man {
+  margin-top: 7rem;
+}
+.section-best-sellers-women .top-side,
+.section-best-sellers-man .top-side {
+  background: linear-gradient(to left, #f7d293, #fff8ea);
+}
+.section-best-sellers-women .top-side img,
+.section-best-sellers-man .top-side img {
+  width: 50px;
+}
+@media screen and (max-width: 576px) {
+  .section-best-sellers-women .top-side .col-12,
+  .section-best-sellers-man .top-side .col-12 {
+    justify-content: center !important;
+  }
+}
+.section-best-sellers-women .top-side .title-best-sellers-women,
+.section-best-sellers-man .top-side .title-best-sellers-women {
+  font-size: 1.4rem;
+  word-spacing: -3px;
+}
+@media screen and (max-width: 576px) {
+  .section-best-sellers-women .top-side .title-best-sellers-women,
+  .section-best-sellers-man .top-side .title-best-sellers-women {
+    font-size: 1rem;
+  }
+}
+.section-best-sellers-women .top-side .all-best-sellers-women-btn,
+.section-best-sellers-man .top-side .all-best-sellers-women-btn {
+  background: none;
+  border: 2px solid #2d365d;
+  transition: 0.25s;
+}
+.section-best-sellers-women .top-side .all-best-sellers-women-btn:hover,
+.section-best-sellers-man .top-side .all-best-sellers-women-btn:hover {
+  background: #2d365d;
+  color: #fff;
+}
+.section-best-sellers-women .special-institutions-swiper,
+.section-best-sellers-man .special-institutions-swiper {
+  width: 100%;
+  height: 100%;
+}
+.section-best-sellers-women .special-institutions-swiper .swiper-slide .card,
+.section-best-sellers-man .special-institutions-swiper .swiper-slide .card {
+  width: 100%;
+  height: 100%;
+}
+.section-best-sellers-women .btn-next-third-slider,
+.section-best-sellers-women .btn-prev-third-slider,
+.section-best-sellers-man .btn-next-third-slider,
+.section-best-sellers-man .btn-prev-third-slider {
+  transform: scale(0.8);
+  padding: 2rem;
+}
+@media screen and (max-width: 991px) {
+  .section-best-sellers-women .btn-next-third-slider,
+  .section-best-sellers-women .btn-prev-third-slider,
+  .section-best-sellers-man .btn-next-third-slider,
+  .section-best-sellers-man .btn-prev-third-slider {
+    transform: scale(0.6) !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-best-sellers-women .btn-next-third-slider,
+  .section-best-sellers-women .btn-prev-third-slider,
+  .section-best-sellers-man .btn-next-third-slider,
+  .section-best-sellers-man .btn-prev-third-slider {
+    transform: scale(0.5) !important;
+  }
+}
+
+/* Finish The best selling women's and man's sportswear Section */
+.one-gallery-img {
+  margin-top: 7rem;
+}
+@media screen and (max-width: 767px) {
+  .one-gallery-img {
+    margin-top: 4rem;
+  }
+}
+
+/* Start About Us Section */
+.section-about-us {
+  margin-top: 7rem;
+}
+.section-about-us .text-about-us-content {
+  background: linear-gradient(to top left, #8ed1fc 2%, #fff 55%);
+}
+
+/* Finish About Us Section */
+
+/*# sourceMappingURL=style.css.map */
