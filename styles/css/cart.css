@@ -101,7 +101,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .search-product {
-  width: 30rem;
+  width: 20rem;
 }
 .search-product .search-product-input {
   padding: 8px 1rem 12px 4rem;
@@ -113,9 +113,24 @@ html::-webkit-scrollbar-thumb {
 .search-product .search-product-input::placeholder {
   color: #797e86;
 }
+@media screen and (max-width: 1199px) {
+  .search-product {
+    width: 16rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .search-product {
+    width: 20rem;
+  }
+}
 @media screen and (max-width: 576px) {
   .search-product {
-    width: 25rem;
+    width: 17rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .search-product {
+    width: 75%;
   }
 }
 .search-product .btn-search {

@@ -49,28 +49,34 @@
         <!-- Topbar Menu -->
         <nav class="topbar b-radius-l mx-3 py-2 bg-white">
             <div class="container-fluid">
-                <div class="topbar-content d-flex align-items-center">
-                    <div class="d-flex align-items-center lifesports me-1 me-sm-3">
+                <div class="topbar-content d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center lifesports me-2 me-sm-3">
                         <a href="./index.html">
 
                             <img src="./images/icons/lifesports.png" class="lifesports-icon img-fluid" alt="lifesports">
                         </a>
                     </div>
 
-                    <div class="search-product ms-auto position-relative">
-                        <input type="text" placeholder="جستوجوی کالا"
-                            class="form-control bg-light b-radius-s search-product-input fs-7">
+                    <div class="left-topbar-side d-flex">
 
-                        <button class="position-absolute b-radius-s btn-search d-flex px-3 py-2 fs-5 top-0">
-                            <i class="bi bi-search text-white"></i>
-                        </button>
-                    </div>
+                        <a href="./cart.html" class="text-decoration-none position-relative">
 
-                    <div class="login-register-user d-none d-lg-block ms-3">
-                        <a href="./login.html" type="text"
-                            class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center">
-                            <i class="bi bi-person-fill fs-4 me-1"></i>
-                            ثبت نام / ورود </a>
+                            <span class="position-absolute top-0 start-0 badge rounded-pill count-cart fs-8 fw-300">
+                                9+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+
+                            <i
+                                class="bi bi-basket3-fill fs-4 text-white cart-icon pt-2 pb-1 d-block px-3 px-sm-4 b-radius-l"></i>
+                        </a>
+
+                        <div class="login-register-user ms-2 ms-md-3">
+                            <a href="./login.html" type="text"
+                                class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center">
+                                <i class="bi bi-person-fill fs-4 me-0 me-md-1"></i>
+                                <span class="d-none d-md-block"> ثبت نام / ورود </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,7 +118,7 @@
                             </ul>
                         </li>
                         <li id="special-institutions-btn-menu" class="nav-item b-radius-m me-1 p-0">
-                            <a href="/#special-institutions" class="nav-link px-4 text-white fs-6"
+                            <a href="./index.html#special-institutions" class="nav-link px-4 text-white fs-6"
                                 aria-disabled="true">پیشنهادات</a>
                         </li>
                         <li class="nav-item b-radius-m me-1 p-0">
@@ -204,22 +210,15 @@
                     </div>
                 </div>
 
-                <div class="login-register-user ms-auto me-3 me-sm-4 d-block d-lg-none ms-3">
-                    <a href="./login.html" type="text"
-                        class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center p-1 p-sm-2 justify-content-center">
-                        <i class="bi bi-person-fill fs-4 px-2"></i></a>
+                <div class="search-product position-relative">
+                    <input type="text" placeholder="جستوجوی کالا"
+                        class="form-control bg-light b-radius-s search-product-input fs-7">
+
+                    <button class="position-absolute b-radius-s btn-search d-flex px-3 py-2 fs-5 top-0">
+                        <i class="bi bi-search text-white"></i>
+                    </button>
                 </div>
 
-                <a href="./cart.html" class="text-decoration-none position-relative">
-
-                    <span class="position-absolute top-0 start-0 badge rounded-pill count-cart fs-8 fw-300">
-                        9+
-                        <span class="visually-hidden">unread messages</span>
-                    </span>
-
-                    <i
-                        class="bi bi-basket3-fill fs-4 text-white cart-icon pt-2 pb-1 d-block px-3 px-sm-4 b-radius-l"></i>
-                </a>
             </div>
         </nav>
     </header>
@@ -231,7 +230,8 @@
 
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item" aria-current="page"> <a href="./index.html" class="text-decoration-none"> لایف
+                    <li class="breadcrumb-item" aria-current="page"> <a href="./index.html"
+                            class="text-decoration-none"> لایف
                             اسپرت </a></li>
                     <li class="breadcrumb-item" aria-current="page"> <a href="./shop.html?category=لباس ورزشی"
                             class="text-decoration-none"> لباس ورزشی </a></li>
@@ -1173,7 +1173,8 @@
                                 <div class="swiper-slide">
                                     <div class="card position-relative">
 
-                                        <span class="position-absolute top-0 end-0 badge value-discount-off px-2 py-1 bg-danger fs-6 f-lalezar fw-300">
+                                        <span
+                                            class="position-absolute top-0 end-0 badge value-discount-off px-2 py-1 bg-danger fs-6 f-lalezar fw-300">
                                             50%
                                             <span class="visually-hidden">unread messages</span>
                                         </span>
@@ -1437,10 +1438,12 @@
                             </div>
 
                             <!-- Btns navigation Slider -->
-                            <div class="swiper-button-next btn-next-related-product-slider rounded-pill text-white bg-theme">
+                            <div
+                                class="swiper-button-next btn-next-related-product-slider rounded-pill text-white bg-theme">
                             </div>
 
-                            <div class="swiper-button-prev btn-prev-related-product-slider rounded-pill text-white bg-theme">
+                            <div
+                                class="swiper-button-prev btn-prev-related-product-slider rounded-pill text-white bg-theme">
                             </div>
                         </div>
                     </div>
@@ -1474,7 +1477,8 @@
                                     <a href="./shop.html" class="text-decoration-none text-white fs-7"> فروشگاه </a>
                                 </li>
                                 <li class="mb-3">
-                                    <a href="./index.html#special-institutions" class="text-decoration-none text-white fs-7">
+                                    <a href="./index.html#special-institutions"
+                                        class="text-decoration-none text-white fs-7">
                                         پیشنهادات </a>
                                 </li>
                                 <li class="mb-3">

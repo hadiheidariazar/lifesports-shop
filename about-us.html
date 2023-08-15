@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,6 +37,7 @@
         content="سایت لایف اسپرت برای خریداری راحت و امن لوازم وررزشی در هر رشته هست که میتوانید از این سایت استفاده کنید">
     <meta name="keywords" content="لایف اسپرت, خرید لوازم ورزشی, ورزشی, خدمات ورزشی, lifesports">
 </head>
+
 <body>
 
     <div class="loader w-100 bg-light d-grid justify-content-center align-items-center">
@@ -46,28 +48,34 @@
         <!-- Topbar Menu -->
         <nav class="topbar b-radius-l mx-3 py-2 bg-white">
             <div class="container-fluid">
-                <div class="topbar-content d-flex align-items-center">
-                    <div class="d-flex align-items-center lifesports me-1 me-sm-3">
+                <div class="topbar-content d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center lifesports me-2 me-sm-3">
                         <a href="./index.html">
 
                             <img src="./images/icons/lifesports.png" class="lifesports-icon img-fluid" alt="lifesports">
                         </a>
                     </div>
 
-                    <div class="search-product ms-auto position-relative">
-                        <input type="text" placeholder="جستوجوی کالا"
-                            class="form-control bg-light b-radius-s search-product-input fs-7">
+                    <div class="left-topbar-side d-flex">
 
-                        <button class="position-absolute b-radius-s btn-search d-flex px-3 py-2 fs-5 top-0">
-                            <i class="bi bi-search text-white"></i>
-                        </button>
-                    </div>
+                        <a href="./cart.html" class="text-decoration-none position-relative">
 
-                    <div class="login-register-user d-none d-lg-block ms-3">
-                        <a href="./login.html" type="text"
-                            class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center">
-                            <i class="bi bi-person-fill fs-4 me-1"></i>
-                            ثبت نام / ورود </a>
+                            <span class="position-absolute top-0 start-0 badge rounded-pill count-cart fs-8 fw-300">
+                                9+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+        
+                            <i
+                                class="bi bi-basket3-fill fs-4 text-white cart-icon pt-2 pb-1 d-block px-3 px-sm-4 b-radius-l"></i>
+                        </a>
+
+                        <div class="login-register-user ms-2 ms-md-3">
+                            <a href="./login.html" type="text"
+                                class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center">
+                                <i class="bi bi-person-fill fs-4 me-0 me-md-1"></i>
+                                <span class="d-none d-md-block">ثبت نام / ورود </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,7 +117,7 @@
                             </ul>
                         </li>
                         <li id="special-institutions-btn-menu" class="nav-item b-radius-m me-1 p-0">
-                            <a href="/#special-institutions" class="nav-link px-4 text-white fs-6"
+                            <a href="./index.html#special-institutions" class="nav-link px-4 text-white fs-6"
                                 aria-disabled="true">پیشنهادات</a>
                         </li>
                         <li class="nav-item b-radius-m me-1 p-0">
@@ -201,38 +209,36 @@
                     </div>
                 </div>
 
-                <div class="login-register-user ms-auto me-3 me-sm-4 d-block d-lg-none ms-3">
-                    <a href="./login.html" type="text"
-                        class="btn bg-light btn-login-register-user fs-7 b-radius-s w-100 d-flex align-items-center p-1 p-sm-2 justify-content-center">
-                        <i class="bi bi-person-fill fs-4 px-2"></i></a>
+                <div class="search-product position-relative">
+                    <input type="text" placeholder="جستوجوی کالا"
+                        class="form-control bg-light b-radius-s search-product-input fs-7">
+
+                    <button class="position-absolute b-radius-s btn-search d-flex px-3 py-2 fs-5 top-0">
+                        <i class="bi bi-search text-white"></i>
+                    </button>
                 </div>
-
-                <a href="./cart.html" class="text-decoration-none position-relative">
-
-                    <span class="position-absolute top-0 start-0 badge rounded-pill count-cart fs-8 fw-300">
-                        9+
-                        <span class="visually-hidden">unread messages</span>
-                    </span>
-
-                    <i
-                        class="bi bi-basket3-fill fs-4 text-white cart-icon pt-2 pb-1 d-block px-3 px-sm-4 b-radius-l"></i>
-                </a>
             </div>
         </nav>
     </header>
-    
+
 
     <div class="container">
 
         <div class="about-us-content bg-light w-100 b-radius-s p-3">
             <h3 class="f-lalezar text-theme fs-1 mb-4"> درباره ما </h3>
 
-            <div id="contact-us-scroll" data-bs-spy="scroll" data-bs-target="#contact-us" data-bs-smooth-scroll="true"></div>
+            <div id="contact-us-scroll" data-bs-spy="scroll" data-bs-target="#contact-us" data-bs-smooth-scroll="true">
+            </div>
 
             <p class="about-us">
-                سلام من هادی حیدری آذر هستم سازنده این سایت من این سایت رو برای نمونه کار خودم ساختم تا مهارت های خودم رو نشان بدم.
+                سلام من هادی حیدری آذر هستم سازنده این سایت من این سایت رو برای نمونه کار خودم ساختم تا مهارت های خودم
+                رو نشان بدم.
                 <br>
-                سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که میتوانید خیلی راحت محصول خود را یافته و آن را سفارش بدید و از آن استفاده کنید تمام چیز هایی ورزشی که میخواهید میتوانید در این سایت پیدا کنید ما در لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم از شما رضایت 100 در صدی داشته باشیم ما در لایف اسپرت این تضمین رو میدیم که خیلی راحت انتخاب کنید چون ما به شما مشاوره رایگان و تحویل محصول درب منزل و مرجوع کردن کالا رو میدیم تا شما مشتری عزیز با خیال راحت و آسوده محصول مورد نظر خود را سفارش دهید
+                سایت فروشگاه آنلاین لایف اسپرت برای فروش لوازم ورزشی هست که میتوانید خیلی راحت محصول خود را یافته و آن
+                را سفارش بدید و از آن استفاده کنید تمام چیز هایی ورزشی که میخواهید میتوانید در این سایت پیدا کنید ما در
+                لایف اسپرت تضمین کیفیت کالاها رو به شما میدیم و سعی میکنیم از شما رضایت 100 در صدی داشته باشیم ما در
+                لایف اسپرت این تضمین رو میدیم که خیلی راحت انتخاب کنید چون ما به شما مشاوره رایگان و تحویل محصول درب
+                منزل و مرجوع کردن کالا رو میدیم تا شما مشتری عزیز با خیال راحت و آسوده محصول مورد نظر خود را سفارش دهید
             </p>
 
             <h3 class="f-lalezar text-theme fs-1 mt-5"> ارتباط با ما </h3>
@@ -285,11 +291,13 @@
                                     <a href="./shop.html" class="text-decoration-none text-white fs-7"> فروشگاه </a>
                                 </li>
                                 <li class="mb-3">
-                                    <a href="./index.html#special-institutions" class="text-decoration-none text-white fs-7">
+                                    <a href="./index.html#special-institutions"
+                                        class="text-decoration-none text-white fs-7">
                                         پیشنهادات </a>
                                 </li>
                                 <li class="mb-3">
-                                    <a href="#contact-us-scroll" class="text-decoration-none text-white fs-7" id="contact-us"> ارتباط با ما
+                                    <a href="#contact-us-scroll" class="text-decoration-none text-white fs-7"
+                                        id="contact-us"> ارتباط با ما
                                     </a>
                                 </li>
                                 <li>
@@ -368,4 +376,5 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/features/loader.js"></script>
 </body>
+
 </html>

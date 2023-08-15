@@ -19,7 +19,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .search-product {
-    width: 30rem;
+    width: 20rem;
 
     .search-product-input {
         padding: 8px 1rem 12px 4rem;
@@ -35,8 +35,20 @@ html::-webkit-scrollbar-thumb {
 
     }
 
+    @include responsivePage(XL) {
+        width: 16rem;
+    }
+
+    @include responsivePage(L) {
+        width: 20rem;
+    }
+
     @include responsivePage(S) {
-        width: 25rem;
+        width: 17rem;
+    }
+
+    @include responsivePage(XS) {
+        width: 75%;
     }
 
     .btn-search {
