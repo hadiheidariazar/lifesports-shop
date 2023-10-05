@@ -89,7 +89,6 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
   background-color: #05f;
-  border-radius: 1rem;
 }
 
 .nav-item {
@@ -184,15 +183,20 @@ html::-webkit-scrollbar-thumb {
 }
 
 .offcanvas {
-  width: 20rem !important;
+  width: 17rem !important;
 }
 @media screen and (max-width: 576px) {
   .offcanvas {
-    width: 16rem !important;
+    width: 14rem !important;
   }
 }
 .offcanvas .btn-close:focus {
   box-shadow: none;
+}
+.offcanvas .offcanvas-body ul li:hover,
+.offcanvas .offcanvas-body ul li:focus {
+  background: #05f !important;
+  color: #fff !important;
 }
 
 .dropdown-menu {
@@ -207,6 +211,20 @@ html::-webkit-scrollbar-thumb {
 .dropdown-menu li a:focus {
   background-color: #05f !important;
   color: #fff !important;
+}
+
+@media screen and (max-width: 400px) {
+  .lifesports-icon {
+    width: 80%;
+  }
+}
+
+.submenu-category {
+  width: 95%;
+}
+
+.hidden-content {
+  overflow: hidden !important;
 }
 
 /*# sourceMappingURL=header.css.map */

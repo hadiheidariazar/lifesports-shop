@@ -49,7 +49,7 @@
 
         .card-title {
             font-size: .9rem;
-            line-height: .9rem;
+            line-height: 1rem !important;
             display: block;
 
             &:hover {
@@ -58,7 +58,7 @@
 
             @include responsivePage(M) {
                 font-size: .8rem;
-                line-height: .8rem;
+                line-height: .9rem !important;
             }
         }
     }

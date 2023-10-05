@@ -7,7 +7,7 @@ const thirdSwiperSlide = $.querySelector('.mySwiper3').classList[1]
 
 createSwiperSlide({
     slidesPerView: 1,
-    spaceBetween: 5,
+    spaceBetween: 0,
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -25,7 +25,7 @@ createSwiperSlide({
 
 createSwiperSlide({
     slidesPerView: 2,
-    spaceBetween: 2,
+    spaceBetween: 10,
     breakpoints: {
         991: {
             slidesPerView: 3,
@@ -39,7 +39,7 @@ createSwiperSlide({
 
 createSwiperSlide({
     slidesPerView: 2,
-    spaceBetween: 2,
+    spaceBetween: 10,
     breakpoints: {
         640: {
             slidesPerView: 3,

@@ -19,6 +19,22 @@
 .first-slider {
     user-select: none;
 
+    .swiper-pagination-bullet-active {
+        transition: .25s;
+        width: 30px !important;
+        border-radius: 30px;
+        background: $theme-color !important;
+    }
+
+    .swiper-pagination-bullet {
+        border: 2px solid $theme-color !important;
+        opacity: 1;
+        height: 12px;
+        width: 12px;
+        background: #fff;
+        margin: 2px !important;
+    }
+
     .swiper-slide img {
         object-fit: cover;
     }

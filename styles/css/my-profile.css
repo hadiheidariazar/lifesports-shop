@@ -89,7 +89,6 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
   background-color: #05f;
-  border-radius: 1rem;
 }
 
 .nav-item {
@@ -184,15 +183,20 @@ html::-webkit-scrollbar-thumb {
 }
 
 .offcanvas {
-  width: 20rem !important;
+  width: 17rem !important;
 }
 @media screen and (max-width: 576px) {
   .offcanvas {
-    width: 16rem !important;
+    width: 14rem !important;
   }
 }
 .offcanvas .btn-close:focus {
   box-shadow: none;
+}
+.offcanvas .offcanvas-body ul li:hover,
+.offcanvas .offcanvas-body ul li:focus {
+  background: #05f !important;
+  color: #fff !important;
 }
 
 .dropdown-menu {
@@ -207,6 +211,20 @@ html::-webkit-scrollbar-thumb {
 .dropdown-menu li a:focus {
   background-color: #05f !important;
   color: #fff !important;
+}
+
+@media screen and (max-width: 400px) {
+  .lifesports-icon {
+    width: 80%;
+  }
+}
+
+.submenu-category {
+  width: 95%;
+}
+
+.hidden-content {
+  overflow: hidden !important;
 }
 
 .section-one {
@@ -288,6 +306,10 @@ html::-webkit-scrollbar-thumb {
   border: none !important;
 }
 
+ul {
+  list-style: none;
+}
+
 .active,
 .navbar-item:hover,
 .offcanvas-item:hover {
@@ -310,7 +332,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .section-wrapper {
-  height: 100vh;
+  height: 100vh !important;
   border-top-right-radius: 4rem;
   border-bottom-right-radius: 4rem;
 }
@@ -323,21 +345,16 @@ html::-webkit-scrollbar-thumb {
 .section-wrapper .logout {
   cursor: pointer;
 }
-.section-wrapper i {
+.section-wrapper .btns-page i {
   transition: 0.25s;
 }
-.section-wrapper i:hover {
+.section-wrapper .btns-page i:hover {
   color: #fff !important;
   background-color: #797e86 !important;
 }
 .section-wrapper .panel-header-info {
-  width: 28rem;
+  width: max-content;
   overflow-x: hidden;
-}
-@media screen and (max-width: 991px) {
-  .section-wrapper .panel-header-info {
-    width: 29rem;
-  }
 }
 .section-wrapper .panel-header-info .wellcome {
   border-left: 1px solid #797e86;
@@ -368,6 +385,14 @@ html::-webkit-scrollbar-thumb {
   border-radius: 70px 40px 40px 40px;
 }
 
+.navbar {
+  overflow-y: auto !important;
+  height: 100vh;
+}
+
+.offcanvas {
+  overflow-y: auto;
+}
 @media screen and (max-width: 576px) {
   .offcanvas {
     width: 14rem !important;
@@ -401,6 +426,14 @@ html::-webkit-scrollbar-thumb {
 }
 .footer-text p {
   word-spacing: -2px;
+}
+
+.panel-header-name {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
 }
 
 /*# sourceMappingURL=my-profile.css.map */

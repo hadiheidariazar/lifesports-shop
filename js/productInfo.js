@@ -18,7 +18,7 @@ createSwiperSlide({
 
 createSwiperSlide({
     slidesPerView: 2,
-    spaceBetween: 2,
+    spaceBetween: 10,
     breakpoints: {
         640: {
             slidesPerView: 3,

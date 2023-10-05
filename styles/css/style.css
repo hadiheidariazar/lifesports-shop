@@ -89,7 +89,6 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
   background-color: #05f;
-  border-radius: 1rem;
 }
 
 .nav-item {
@@ -184,15 +183,20 @@ html::-webkit-scrollbar-thumb {
 }
 
 .offcanvas {
-  width: 20rem !important;
+  width: 17rem !important;
 }
 @media screen and (max-width: 576px) {
   .offcanvas {
-    width: 16rem !important;
+    width: 14rem !important;
   }
 }
 .offcanvas .btn-close:focus {
   box-shadow: none;
+}
+.offcanvas .offcanvas-body ul li:hover,
+.offcanvas .offcanvas-body ul li:focus {
+  background: #05f !important;
+  color: #fff !important;
 }
 
 .dropdown-menu {
@@ -207,6 +211,20 @@ html::-webkit-scrollbar-thumb {
 .dropdown-menu li a:focus {
   background-color: #05f !important;
   color: #fff !important;
+}
+
+@media screen and (max-width: 400px) {
+  .lifesports-icon {
+    width: 80%;
+  }
+}
+
+.submenu-category {
+  width: 95%;
+}
+
+.hidden-content {
+  overflow: hidden !important;
 }
 
 .section-one {
@@ -291,7 +309,7 @@ html::-webkit-scrollbar-thumb {
 }
 .product-title .card-title {
   font-size: 0.9rem;
-  line-height: 0.9rem;
+  line-height: 1rem !important;
   display: block;
 }
 .product-title .card-title:hover {
@@ -300,7 +318,7 @@ html::-webkit-scrollbar-thumb {
 @media screen and (max-width: 767px) {
   .product-title .card-title {
     font-size: 0.8rem;
-    line-height: 0.8rem;
+    line-height: 0.9rem !important;
   }
 }
 
@@ -329,6 +347,20 @@ html::-webkit-scrollbar-thumb {
 /* Start First Slider Section */
 .first-slider {
   user-select: none;
+}
+.first-slider .swiper-pagination-bullet-active {
+  transition: 0.25s;
+  width: 30px !important;
+  border-radius: 30px;
+  background: #05f !important;
+}
+.first-slider .swiper-pagination-bullet {
+  border: 2px solid #05f !important;
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background: #fff;
+  margin: 2px !important;
 }
 .first-slider .swiper-slide img {
   object-fit: cover;

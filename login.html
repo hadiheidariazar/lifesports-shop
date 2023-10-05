@@ -38,7 +38,7 @@
     <meta name="keywords" content="لایف اسپرت, خرید لوازم ورزشی, ورزشی, خدمات ورزشی, lifesports">
 </head>
 
-<body>
+<body class="hidden-content">
 
     <div class="loader w-100 bg-light d-grid justify-content-center align-items-center">
         <div class="custom-loader"></div>
@@ -50,7 +50,7 @@
             <div class="container-fluid">
                 <div class="topbar-content d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center lifesports me-2 me-sm-3">
-                        <a href="./index.html">
+                        <a href="/">
 
                             <img src="./images/icons/lifesports.png" class="lifesports-icon img-fluid" alt="lifesports">
                         </a>
@@ -137,13 +137,13 @@
                         <div class="bg-white btn-navbar-toggle-item rounded-pill"></div>
                     </button>
 
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+                    <div class="offcanvas offcanvas-start pb-3" tabindex="-1" id="offcanvasRight"
                         aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
                             <div class="offcanvas-photo text-center">
-                                <a href="./index.html">
+                                <a href="/">
 
-                                    <img src="./images/icons/lifesports.png" class="offcanvas-title w-50"
+                                    <img src="./images/icons/lifesports.png" class="offcanvas-title w-75"
                                         alt="lifesports">
                                 </a>
                             </div>
@@ -153,61 +153,60 @@
                                 <i class="bi bi-x-lg fs-4"></i>
                             </button>
                         </div>
-                        <div class="offcanvas-body text-start">
-                            <ul class="f-lalezar m-0 px-2">
+                        <div class="offcanvas-body text-start px-1">
 
-                                <ul class="f-lalezar m-0 p-0">
-                                    <li class="fs-4 mb-2 nav-item rounded-pill bg-light p-2"><a href="./index.html"
-                                            class="nav-link">
-                                            <i class="bi bi-house me-1"></i>
-                                            خانه</a> </li>
-                                    <li class="fs-4 my-2 nav-item rounded-pill bg-light p-2"><a href="./shop.html"
-                                            class="nav-link">
-                                            <i class="bi bi-shop me-1"></i>
-                                            فروشگاه</a> </li>
-                                    <li class="fs-4 my-2 nav-item rounded-pill bg-light p-2"><a href="./about-us.html"
-                                            class="nav-link">
-                                            <i class="bi bi-people me-1"></i>
-                                            درباره ما </a></li>
-                                    <li class="fs-4 my-2 nav-item rounded-pill bg-light p-2"><a href="./about-us.html"
-                                            class="nav-link">
-                                            <i class="bi bi-chat-text me-1"></i>
-                                            ارتباط با ما </a></li>
+                            <ul class="f-lalezar m-0 p-0">
+                                <li class="fs-5 mb-2 nav-item rounded-pill bg-light text-dark"><a href="/"
+                                        class="nav-link px-3 py-2">
+                                        <i class="bi bi-house me-1"></i>
+                                        خانه</a> </li>
+                                <li class="fs-5 my-2 nav-item rounded-pill bg-light text-dark"><a href="./shop.html"
+                                        class="nav-link px-3 py-2">
+                                        <i class="bi bi-shop me-1"></i>
+                                        فروشگاه</a> </li>
+                                <li class="fs-5 my-2 nav-item rounded-pill bg-light text-dark"><a href="./about-us.html"
+                                        class="nav-link px-3 py-2">
+                                        <i class="bi bi-people me-1"></i>
+                                        درباره ما </a></li>
+                                <li class="fs-5 my-2 nav-item rounded-pill bg-light text-dark"><a href="./about-us.html"
+                                        class="nav-link px-3 py-2">
+                                        <i class="bi bi-chat-text me-1"></i>
+                                        ارتباط با ما </a></li>
 
-                                    <li class="nav-item rounded-pill bg-light p-2 dropdown">
-                                        <a class="nav-link fs-4 dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="bi bi-list me-1"></i>
-                                            دسته بندی کالاها
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item py-2" href="./shop.html?category=لباس ورزشی">
-                                                    لباس ورزشی </a></li>
-                                            <li><a class="dropdown-item py-2" href="./shop.html?category=کفش ورزشی"> کفش
-                                                    ورزشی </a></li>
-                                            <li><a class="dropdown-item py-2" href="./shop.html?category=توپ ورزشی"> توپ
-                                                    ورزشی </a></li>
-                                            <li><a class="dropdown-item py-2" href="./shop.html?category=گرم کن ورزشی">
-                                                    گرم کن ورزشی </a></li>
-                                            <li><a class="dropdown-item py-2" href="./shop.html?category=ساک ورزشی"> ساک
-                                                    ورزشی </a></li>
-                                            <li><a class="dropdown-item py-2"
-                                                    href="./shop.html?category=لوازم بزرگ ورزشی"> لوازم بزرگ ورزشی</a>
-                                            </li>
-                                            <li><a class="dropdown-item py-2"
-                                                    href="./shop.html?category=لوازم کوچک ورزشی"> لوازم کوچک ورزشی</a>
-                                            </li>
-                                            <li><a class="dropdown-item py-2" href="./shop.html"> سایر کالاها </a></li>
-                                        </ul>
-                                    </li>
+                                <li class="nav-item rounded-pill bg-light dropdown text-dark">
+                                    <a class="nav-link fs-5 px-3 py-2 dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-list me-1"></i>
+                                        دسته بندی کالاها
+                                    </a>
+                                    <ul class="dropdown-menu submenu-category bg-light mt-2">
+                                        <li><a class="dropdown-item py-2" href="./shop.html?category=لباس ورزشی">
+                                                لباس ورزشی </a></li>
+                                        <li><a class="dropdown-item py-2" href="./shop.html?category=کفش ورزشی"> کفش
+                                                ورزشی </a></li>
+                                        <li><a class="dropdown-item py-2" href="./shop.html?category=توپ ورزشی"> توپ
+                                                ورزشی </a></li>
+                                        <li><a class="dropdown-item py-2" href="./shop.html?category=گرم کن ورزشی">
+                                                گرم کن ورزشی </a></li>
+                                        <li><a class="dropdown-item py-2" href="./shop.html?category=ساک ورزشی"> ساک
+                                                ورزشی </a></li>
+                                        <li><a class="dropdown-item py-2" href="./shop.html?category=لوازم بزرگ ورزشی">
+                                                لوازم بزرگ ورزشی</a>
+                                        </li>
+                                        <li><a class="dropdown-item py-2" href="./shop.html?category=لوازم کوچک ورزشی">
+                                                لوازم کوچک ورزشی</a>
+                                        </li>
+                                        <li><a class="dropdown-item py-2" href="./shop.html"> سایر کالاها </a></li>
+                                    </ul>
+                                </li>
 
-                                </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="search-product position-relative">
-                    <input type="text" placeholder="جستوجوی کالا"
+                    <input type="text" placeholder="جستجوی کالا ..."
                         class="form-control bg-light b-radius-s search-product-input fs-7">
 
                     <button class="position-absolute b-radius-s btn-search d-flex px-3 py-2 fs-5 top-0">
@@ -225,7 +224,7 @@
 
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item" aria-current="page"> <a href="./index.html"
+                    <li class="breadcrumb-item" aria-current="page"> <a href="/"
                             class="text-decoration-none"> لایف
                             اسپرت </a></li>
                     <li class="breadcrumb-item active"> ورود به حساب </li>

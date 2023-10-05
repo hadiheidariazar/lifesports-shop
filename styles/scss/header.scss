@@ -7,7 +7,6 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
     background-color: $theme-color;
-    border-radius: 1rem;
 }
 
 .nav-item {
@@ -115,14 +114,20 @@ html::-webkit-scrollbar-thumb {
 }
 
 .offcanvas {
-    width: 20rem !important;
+    width: 17rem !important;
 
     @include responsivePage(S) {
-        width: 16rem !important;
+        width: 14rem !important;
     }
 
     .btn-close:focus {
         box-shadow: none;
+    }
+
+    .offcanvas-body ul li:hover,
+    .offcanvas-body ul li:focus {
+        background: $theme-color !important;
+        color: #fff !important;
     }
 }
 
@@ -142,4 +147,19 @@ html::-webkit-scrollbar-thumb {
         background-color: $theme-color !important;
         color: #fff !important;
     }
+}
+
+.lifesports-icon {
+    @include responsivePage(XS) {
+        width: 80%;
+    }
+}
+
+.submenu-category {
+    width: 95%;
+}
+
+
+.hidden-content {
+    overflow: hidden !important;
 }

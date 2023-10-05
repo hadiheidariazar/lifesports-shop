@@ -9,6 +9,10 @@
     border: none !important;
 }
 
+ul {
+    list-style: none;
+}
+
 .active,
 .navbar-item:hover,
 .offcanvas-item:hover {
@@ -31,7 +35,7 @@
 }
 
 .section-wrapper {
-    height: 100vh;
+    height: 100vh !important;
     border-top-right-radius: 4rem;
     border-bottom-right-radius: 4rem;
 
@@ -44,22 +48,20 @@
         cursor: pointer;
     }
 
-    i {
-        transition: .25s;
+    .btns-page {
+        i {
+            transition: .25s;
 
-        &:hover {
-            color: #fff !important;
-            background-color: $secondary-500 !important;
+            &:hover {
+                color: #fff !important;
+                background-color: $secondary-500 !important;
+            }
         }
     }
 
     .panel-header-info {
-        width: 28rem;
+        width: max-content;
         overflow-x: hidden;
-
-        @include responsivePage(L) {
-            width: 29rem;
-        }
 
         .wellcome {
             border-left: 1px solid $secondary-500;
@@ -99,7 +101,14 @@
     }
 }
 
+.navbar {
+    overflow-y: auto !important;
+    height: 100vh;
+}
+
 .offcanvas {
+    overflow-y: auto;
+
     @include responsivePage(S) {
         width: 14rem !important;
     }
@@ -135,4 +144,12 @@
     p {
         word-spacing: -2px;
     }
+}
+
+.panel-header-name {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
 }
