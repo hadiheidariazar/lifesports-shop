@@ -304,7 +304,10 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* Start Grouping Products */
-.dropdown-menu a {
+.dropdown-menu {
+  border-radius: 5px !important;
+}
+.dropdown-menu button {
   transition: 0.25s;
 }
 .dropdown-menu .first-item {
@@ -315,11 +318,11 @@ html::-webkit-scrollbar-thumb {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.dropdown-menu a:focus,
-.dropdown-menu a:hover,
+.dropdown-menu button:focus,
+.dropdown-menu button:hover,
 .dropdown-menu .active {
-  background-color: #05f;
-  color: #fff;
+  background: #05f !important;
+  color: #fff !important;
 }
 
 /* Finish Grouping Products */

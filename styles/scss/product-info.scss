@@ -157,7 +157,8 @@
     }
 
     .selected-color {
-        transform: scale(1.5);
+        transform: scale(1.25);
+        outline: 1px solid #000;
     }
 }
 
@@ -287,7 +288,7 @@
 
     .btn-next-related-product-slider {
         margin-left: -10px;
-        
+
         @include responsivePage(L) {
             margin-left: -18px;
         }
@@ -295,7 +296,7 @@
 
     .btn-prev-related-product-slider {
         margin-right: -10px;
-        
+
         @include responsivePage(L) {
             margin-right: -18px;
         }
@@ -305,3 +306,23 @@
 /* Finish Section Related Products */
 
 /* Finish Section Bottom Bar */
+
+.swiper-pagination {
+    margin-bottom: -17px;
+}
+
+.swiper-pagination-bullet-active {
+    transition: .25s;
+    width: 30px !important;
+    border-radius: 30px;
+    background: $theme-color !important;
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid $theme-color !important;
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background: #fff;
+    margin: 2px !important;
+}

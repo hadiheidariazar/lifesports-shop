@@ -16,24 +16,25 @@
 
 /* Start First Slider Section */
 
+.swiper-pagination-bullet-active {
+    transition: .25s;
+    width: 30px !important;
+    border-radius: 30px;
+    background: $theme-color !important;
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid $theme-color !important;
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background: #fff;
+    margin: 2px !important;
+}
+
 .first-slider {
     user-select: none;
 
-    .swiper-pagination-bullet-active {
-        transition: .25s;
-        width: 30px !important;
-        border-radius: 30px;
-        background: $theme-color !important;
-    }
-
-    .swiper-pagination-bullet {
-        border: 2px solid $theme-color !important;
-        opacity: 1;
-        height: 12px;
-        width: 12px;
-        background: #fff;
-        margin: 2px !important;
-    }
 
     .swiper-slide img {
         object-fit: cover;
@@ -74,10 +75,11 @@
         }
     }
 
-    .swiper-pagination {
-        @include responsivePage(S) {
-            margin-bottom: -7px;
-        }
+}
+
+.swiper-pagination {
+    @include responsivePage(S) {
+        margin-bottom: -7px;
     }
 }
 
@@ -118,6 +120,10 @@
 
     .special-institutions {
         height: max-content;
+
+        .second-slider-pagination {
+            margin-bottom: -17px;
+        }
 
         @include sliderStyle;
 
@@ -186,6 +192,11 @@
 .section-best-sellers-women,
 .section-best-sellers-man {
     margin-top: 7rem;
+
+    .third-slider-pagination,
+    .last-slider-pagination {
+        margin-bottom: -17px;
+    }
 
     .top-side {
         background: linear-gradient(to left, #f7d293, #fff8ea);

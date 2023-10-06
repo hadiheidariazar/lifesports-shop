@@ -552,13 +552,13 @@
                                         <div class="select-color">
                                             <label id="select-color-title"> رنگ : </label>
 
+                                            <div class="color border rounded-pill selected-color d-inline-block"
+                                                style="background-color: #000;"></div>
+                                            <div class="color border rounded-pill d-inline-block"
+                                                style="background-color: #ff0000;"></div>
                                             <div class="color border rounded-pill d-inline-block"
                                                 style="background-color: #ccc;"></div>
                                             <div class="color border rounded-pill d-inline-block"
-                                                style="background-color: #ccc;"></div>
-                                            <div class="color border rounded-pill d-inline-block"
-                                                style="background-color: #ccc;"></div>
-                                            <div class="color selected-color border rounded-pill d-inline-block"
                                                 style="background-color: #ccc;"></div>
                                             <div class="color border rounded-pill d-inline-block"
                                                 style="background-color: #ccc;"></div>
@@ -994,7 +994,7 @@
                         <button class="btn btn-primary rounded-pill f-lalezar btn-all-comments text-center">
                             نظرات بیشتر
 
-                            <i class="bi bi-eye-slash-fill ms-2"></i>
+                            <i class="bi bi-eye-fill ms-2"></i>
                         </button>
                     </div>
 
@@ -1163,7 +1163,7 @@
                     </div>
                     <div class="col-12 mb-5 mt-4">
                         <div class="swiper mySwiper3">
-                            <div class="swiper-wrapper related-product-slider">
+                            <div class="swiper-wrapper related-product-slider pb-4">
 
                                 <!-- Slider Items -->
                                 <div class="swiper-slide">
@@ -1432,15 +1432,7 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Btns navigation Slider -->
-                            <div
-                                class="swiper-button-next btn-next-related-product-slider rounded-pill text-white bg-theme">
-                            </div>
-
-                            <div
-                                class="swiper-button-prev btn-prev-related-product-slider rounded-pill text-white bg-theme">
-                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -1559,6 +1551,7 @@
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./js/productInfo.js" type="module"></script>
     <script src="./js/features/loader.js"></script>
+    <script src="./js/features/sizeSelect.js"></script>
     <script src="./js/features/createSwiper.js" type="module"></script>
 
     <script>

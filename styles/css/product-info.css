@@ -464,7 +464,8 @@ html::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 .select-size-color .selected-color {
-  transform: scale(1.5);
+  transform: scale(1.25);
+  outline: 1px solid #000;
 }
 
 /* Finish Section Select Size and Color Main Product */
@@ -603,5 +604,24 @@ html::-webkit-scrollbar-thumb {
 
 /* Finish Section Related Products */
 /* Finish Section Bottom Bar */
+.swiper-pagination {
+  margin-bottom: -17px;
+}
+
+.swiper-pagination-bullet-active {
+  transition: 0.25s;
+  width: 30px !important;
+  border-radius: 30px;
+  background: #05f !important;
+}
+
+.swiper-pagination-bullet {
+  border: 2px solid #05f !important;
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background: #fff;
+  margin: 2px !important;
+}
 
 /*# sourceMappingURL=product-info.css.map */

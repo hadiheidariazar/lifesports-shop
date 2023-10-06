@@ -27,8 +27,12 @@ createSwiperSlide({
             slidesPerView: 4,
         }
     },
-    navigation: {
-        nextEl: ".btn-next-related-product-slider",
-        prevEl: ".btn-prev-related-product-slider",
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 }, thirdSwiperSlide);

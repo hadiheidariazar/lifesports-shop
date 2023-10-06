@@ -345,22 +345,24 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* Start First Slider Section */
-.first-slider {
-  user-select: none;
-}
-.first-slider .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
   transition: 0.25s;
   width: 30px !important;
   border-radius: 30px;
   background: #05f !important;
 }
-.first-slider .swiper-pagination-bullet {
+
+.swiper-pagination-bullet {
   border: 2px solid #05f !important;
   opacity: 1;
   height: 12px;
   width: 12px;
   background: #fff;
   margin: 2px !important;
+}
+
+.first-slider {
+  user-select: none;
 }
 .first-slider .swiper-slide img {
   object-fit: cover;
@@ -400,8 +402,9 @@ html::-webkit-scrollbar-thumb {
     margin: -67px -15px 0 0;
   }
 }
+
 @media screen and (max-width: 576px) {
-  .first-slider .swiper-pagination {
+  .swiper-pagination {
     margin-bottom: -7px;
   }
 }
@@ -433,6 +436,9 @@ html::-webkit-scrollbar-thumb {
 }
 .section-special-institutions .special-institutions {
   height: max-content;
+}
+.section-special-institutions .special-institutions .second-slider-pagination {
+  margin-bottom: -17px;
 }
 .section-special-institutions .special-institutions .special-institutions-swiper {
   width: 100%;
@@ -505,6 +511,12 @@ html::-webkit-scrollbar-thumb {
 .section-best-sellers-women,
 .section-best-sellers-man {
   margin-top: 7rem;
+}
+.section-best-sellers-women .third-slider-pagination,
+.section-best-sellers-women .last-slider-pagination,
+.section-best-sellers-man .third-slider-pagination,
+.section-best-sellers-man .last-slider-pagination {
+  margin-bottom: -17px;
 }
 .section-best-sellers-women .top-side,
 .section-best-sellers-man .top-side {

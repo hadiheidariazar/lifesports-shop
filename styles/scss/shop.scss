@@ -9,7 +9,9 @@
 /* Start Grouping Products */
 
 .dropdown-menu {
-    a {
+    border-radius: 5px !important;
+
+    button {
         transition: .25s;
     }
 
@@ -23,11 +25,11 @@
         border-bottom-right-radius: 5px;
     }
 
-    a:focus,
-    a:hover,
+    button:focus,
+    button:hover,
     .active {
-        background-color: $theme-color;
-        color: #fff;
+        background: $theme-color !important;
+        color: #fff !important;
     }
 }
 

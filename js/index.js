@@ -26,6 +26,14 @@ createSwiperSlide({
 createSwiperSlide({
     slidesPerView: 2,
     spaceBetween: 10,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
     breakpoints: {
         991: {
             slidesPerView: 3,
@@ -40,6 +48,14 @@ createSwiperSlide({
 createSwiperSlide({
     slidesPerView: 2,
     spaceBetween: 10,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
     breakpoints: {
         640: {
             slidesPerView: 3,
@@ -47,9 +63,5 @@ createSwiperSlide({
         991: {
             slidesPerView: 4,
         }
-    },
-    navigation: {
-        nextEl: ".btn-next-third-slider",
-        prevEl: ".btn-prev-third-slider",
-    },
+    }
 }, thirdSwiperSlide);
