@@ -1,4 +1,4 @@
-### A ready template for sports equipment stores
+### Lifesports is an online store, the service of this website is sports equipment
 
 ### Click on the link to view this template <a href="https://lifesports.liara.run"> lifesports </a>
 
