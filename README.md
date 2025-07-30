@@ -1,6 +1,6 @@
 ### Lifesports is an online store, the service of this website is sports equipment
 
-### Click on the link to view this template <a href="https://lifesports.liara.run"> lifesports </a>
+### See <a href="https://lifesports.liara.run"> Demo </a>
 
 ## Developed with
 <img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
